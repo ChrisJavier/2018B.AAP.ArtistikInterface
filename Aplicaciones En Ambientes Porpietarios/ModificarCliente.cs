@@ -156,7 +156,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         private void guardar()
         {
-            if (radioButton1.Checked == true && radioButton2.Checked == false)
+            /*if (radioButton1.Checked == true && radioButton2.Checked == false)
             {
                 consulta1();
             }
@@ -167,7 +167,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             else
             {
                 MessageBox.Show("Seleccione un opción en la identificación");
-            }
+            }*/
         }
         private void consulta1()
         {

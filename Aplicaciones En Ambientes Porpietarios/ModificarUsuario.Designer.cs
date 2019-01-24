@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarUsuario));
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtIdentificacion = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -80,6 +80,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.comboBox2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.pictureBox5);
@@ -89,7 +90,6 @@
             this.groupBox1.Controls.Add(this.txtApellidos);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.txtIdentificacion);
-            this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
@@ -100,6 +100,15 @@
             this.groupBox1.TabIndex = 82;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(22, 53);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(146, 23);
+            this.label7.TabIndex = 92;
+            this.label7.Text = "Cédula de Identidad";
             // 
             // comboBox2
             // 
@@ -191,18 +200,6 @@
             this.txtIdentificacion.Size = new System.Drawing.Size(344, 20);
             this.txtIdentificacion.TabIndex = 77;
             // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(22, 48);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 27);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "CI ";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -237,7 +234,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Location = new System.Drawing.Point(70, 411);
+            this.panel1.Location = new System.Drawing.Point(70, 414);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 259);
             this.panel1.TabIndex = 91;
@@ -389,7 +386,6 @@
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtIdentificacion;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
@@ -406,5 +402,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

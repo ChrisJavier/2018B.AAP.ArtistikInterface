@@ -32,7 +32,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true && txtIdentificacion.TextLength == 10)
+            /*if (radioButton1.Checked == true && txtIdentificacion.TextLength == 10)
             {
                 if (validar.VerificarCedula(txtIdentificacion.Text) == true)
                 {
@@ -88,7 +88,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
                     txtOcupacion.Enabled = true;
                    // dateTimePicker1.Enabled = true;
                 }
-            }
+            }*/
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -98,12 +98,12 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             txtNombre.Text = "";
             txtDireccion.Text = "";
             txtTelefono.Text = "";
-            txtEmail.Text = "";
-            txtOcupacion.Text = "";
+           // txtEmail.Text = "";
+            //txtOcupacion.Text = "";
         }
         private void txtIdentificacion_Leave(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true && txtIdentificacion.TextLength != 10)
+            /*if (radioButton1.Checked == true && txtIdentificacion.TextLength != 10)
             {
                 MessageBox.Show("Cédula de identidad no válida");
                 txtIdentificacion.Text = "";
@@ -112,7 +112,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             {
                 MessageBox.Show("RUC no válido");
                 txtIdentificacion.Text = "";
-            }
+            }*/
 
         }
 
@@ -134,7 +134,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
        
         private void guardar()
         {
-            if (radioButton1.Checked == true && radioButton2.Checked == false)
+           /* if (radioButton1.Checked == true && radioButton2.Checked == false)
             {
                 if (validar.VerificarCedula(txtIdentificacion.Text))
                 {
@@ -153,7 +153,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             else
             {
                 MessageBox.Show("Seleccione un opción en la identificación");
-            }
+            }*/
         }
         private void cargarComboBox()
         {

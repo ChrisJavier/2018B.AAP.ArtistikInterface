@@ -255,9 +255,9 @@
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(6, 100);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 23);
+            this.label4.Size = new System.Drawing.Size(63, 23);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Apellidos";
+            this.label4.Text = "Apellido";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -267,9 +267,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(6, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 23);
+            this.label3.Size = new System.Drawing.Size(62, 23);
             this.label3.TabIndex = 41;
-            this.label3.Text = "Nombres";
+            this.label3.Text = "Nombre";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // NuevoUsuario

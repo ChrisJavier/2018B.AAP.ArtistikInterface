@@ -402,5 +402,61 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             FormEE.Show();
         }
+
+        private void crearParámetroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CrearParametro FormEE = new CrearParametro();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void modificarParámetroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarParametro FormEE = new ModificarParametro();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void consultarParámetroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarParametro FormEE = new ConsultarParametro();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void eliminarParámetroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EliminarParametro FormEE = new EliminarParametro();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
     }
 }

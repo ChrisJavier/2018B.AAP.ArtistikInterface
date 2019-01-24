@@ -112,7 +112,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Cédula",
+            "Cédula de Identidad",
             "Cargo",
             "Nombre",
             "Apellido"});

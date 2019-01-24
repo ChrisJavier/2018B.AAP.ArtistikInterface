@@ -33,6 +33,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -51,7 +52,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -120,6 +120,15 @@
             this.groupBox1.TabIndex = 87;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(2, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 23);
+            this.label2.TabIndex = 91;
+            this.label2.Text = "Cédula de Identidad";
             // 
             // pictureBox5
             // 
@@ -308,15 +317,6 @@
             this.panel1.Size = new System.Drawing.Size(614, 259);
             this.panel1.TabIndex = 88;
             this.panel1.Visible = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 23);
-            this.label2.TabIndex = 91;
-            this.label2.Text = "Cédula de Identidad";
             // 
             // ModificarCliente
             // 

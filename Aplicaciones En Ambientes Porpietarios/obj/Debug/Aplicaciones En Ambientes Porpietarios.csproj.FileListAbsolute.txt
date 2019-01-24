@@ -448,3 +448,7 @@ C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.EliminarEmpleado.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarEmpleado.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarFactura.resources
+C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ConsultarParametro.resources
+C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.CrearParametro.resources
+C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.EliminarParametro.resources
+C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarParametro.resources

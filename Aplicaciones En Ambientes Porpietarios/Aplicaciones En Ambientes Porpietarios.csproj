@@ -136,6 +136,30 @@
     <Compile Include="ConsultarFactura.Designer.cs">
       <DependentUpon>ConsultarFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarParametro.Designer.cs">
+      <DependentUpon>ConsultarParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearParametro.Designer.cs">
+      <DependentUpon>CrearParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarCliente.Designer.cs">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EliminarParametro.Designer.cs">
+      <DependentUpon>EliminarParametro.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +189,12 @@
     </Compile>
     <Compile Include="ModificarFactura.Designer.cs">
       <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarParametro.Designer.cs">
+      <DependentUpon>ModificarParametro.cs</DependentUpon>
     </Compile>
     <Compile Include="ModuloAdministracion.cs">
       <SubType>Form</SubType>
@@ -255,12 +285,6 @@
     </Compile>
     <Compile Include="Evento.Designer.cs">
       <DependentUpon>Evento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="EliminarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EliminarCliente.Designer.cs">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="EliminarProveedor.cs">
       <SubType>Form</SubType>
@@ -391,6 +415,18 @@
     <EmbeddedResource Include="ConsultarFactura.resx">
       <DependentUpon>ConsultarFactura.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarParametro.resx">
+      <DependentUpon>ConsultarParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearParametro.resx">
+      <DependentUpon>CrearParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarParametro.resx">
+      <DependentUpon>EliminarParametro.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearEmpleado.resx">
       <DependentUpon>CrearEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -405,6 +441,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarFactura.resx">
       <DependentUpon>ModificarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarParametro.resx">
+      <DependentUpon>ModificarParametro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModuloAdministracion.resx">
       <DependentUpon>ModuloAdministracion.cs</DependentUpon>
@@ -447,9 +486,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Evento.resx">
       <DependentUpon>Evento.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EliminarCliente.resx">
-      <DependentUpon>EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EliminarProveedor.resx">
       <DependentUpon>EliminarProveedor.cs</DependentUpon>
