@@ -66,6 +66,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,7 +82,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 75);
+            this.label2.Location = new System.Drawing.Point(6, 104);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 23);
             this.label2.TabIndex = 2;
@@ -91,7 +93,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(261, 143);
+            this.label3.Location = new System.Drawing.Point(261, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 23);
             this.label3.TabIndex = 3;
@@ -101,7 +103,7 @@
             // 
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(121, 70);
+            this.dateTimePicker1.Location = new System.Drawing.Point(121, 99);
             this.dateTimePicker1.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(137, 30);
@@ -113,7 +115,7 @@
             // 
             this.dateTimePicker2.CustomFormat = "HH:mm";
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(421, 141);
+            this.dateTimePicker2.Location = new System.Drawing.Point(421, 170);
             this.dateTimePicker2.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(119, 30);
@@ -125,7 +127,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(9, 108);
+            this.label7.Location = new System.Drawing.Point(9, 137);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 23);
             this.label7.TabIndex = 11;
@@ -136,7 +138,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(9, 141);
+            this.label9.Location = new System.Drawing.Point(9, 170);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 23);
             this.label9.TabIndex = 17;
@@ -146,7 +148,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(602, 355);
+            this.pictureBox4.Location = new System.Drawing.Point(605, 380);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(73, 49);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,7 +163,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(330, 355);
+            this.pictureBox3.Location = new System.Drawing.Point(333, 380);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(73, 49);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -176,7 +178,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(75, 355);
+            this.pictureBox2.Location = new System.Drawing.Point(78, 380);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(73, 49);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -190,6 +192,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.pictureBox6);
             this.groupBox2.Controls.Add(this.pictureBox1);
             this.groupBox2.Controls.Add(this.comboBox2);
@@ -213,7 +217,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(68, 48);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(639, 301);
+            this.groupBox2.Size = new System.Drawing.Size(639, 326);
             this.groupBox2.TabIndex = 70;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -223,7 +227,7 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(543, 254);
+            this.pictureBox6.Location = new System.Drawing.Point(543, 283);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 41);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -236,7 +240,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(543, 210);
+            this.pictureBox1.Location = new System.Drawing.Point(543, 239);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(40, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,9 +255,9 @@
             this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox2.Location = new System.Drawing.Point(123, 255);
+            this.comboBox2.Location = new System.Drawing.Point(272, 284);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(417, 31);
+            this.comboBox2.Size = new System.Drawing.Size(268, 31);
             this.comboBox2.TabIndex = 87;
             // 
             // label4
@@ -261,7 +265,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 255);
+            this.label4.Location = new System.Drawing.Point(12, 284);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 23);
             this.label4.TabIndex = 86;
@@ -273,9 +277,9 @@
             this.comboBox1.Enabled = false;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox1.Location = new System.Drawing.Point(169, 215);
+            this.comboBox1.Location = new System.Drawing.Point(272, 247);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(368, 31);
+            this.comboBox1.Size = new System.Drawing.Size(265, 31);
             this.comboBox1.TabIndex = 85;
             // 
             // label1
@@ -283,7 +287,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 218);
+            this.label1.Location = new System.Drawing.Point(12, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 23);
             this.label1.TabIndex = 84;
@@ -294,7 +298,7 @@
             // 
             this.dateTimePicker3.CustomFormat = "HH:mm";
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(122, 143);
+            this.dateTimePicker3.Location = new System.Drawing.Point(122, 172);
             this.dateTimePicker3.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(119, 30);
@@ -307,14 +311,14 @@
             this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox3.Location = new System.Drawing.Point(120, 181);
+            this.comboBox3.Location = new System.Drawing.Point(272, 210);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(417, 31);
+            this.comboBox3.Size = new System.Drawing.Size(265, 31);
             this.comboBox3.TabIndex = 82;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 105);
+            this.textBox2.Location = new System.Drawing.Point(121, 134);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(419, 30);
             this.textBox2.TabIndex = 79;
@@ -324,7 +328,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(9, 181);
+            this.label11.Location = new System.Drawing.Point(9, 210);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 23);
             this.label11.TabIndex = 78;
@@ -337,7 +341,7 @@
             this.comboBox5.Items.AddRange(new object[] {
             "Nacional",
             "Extranjeros"});
-            this.comboBox5.Location = new System.Drawing.Point(121, 33);
+            this.comboBox5.Location = new System.Drawing.Point(121, 62);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(178, 31);
             this.comboBox5.TabIndex = 76;
@@ -347,7 +351,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(6, 36);
+            this.label10.Location = new System.Drawing.Point(6, 65);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(42, 23);
             this.label10.TabIndex = 75;
@@ -357,7 +361,7 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(546, 163);
+            this.pictureBox5.Location = new System.Drawing.Point(546, 192);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -384,6 +388,24 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(9, 33);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 23);
+            this.label5.TabIndex = 90;
+            this.label5.Text = "Código:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(122, 26);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(176, 30);
+            this.textBox1.TabIndex = 91;
+            // 
             // CrearEvento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,7 +413,7 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(792, 414);
+            this.ClientSize = new System.Drawing.Size(790, 441);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.pictureBox4);
@@ -444,5 +466,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
     }
 }

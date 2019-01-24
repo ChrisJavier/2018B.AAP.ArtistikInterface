@@ -71,7 +71,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
-            //this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -141,20 +140,19 @@
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTelefono.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(299, 139);
+            this.txtTelefono.Location = new System.Drawing.Point(377, 139);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(344, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(266, 20);
             this.txtTelefono.TabIndex = 81;
-           // this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtNombre.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(297, 93);
+            this.txtNombre.Location = new System.Drawing.Point(375, 93);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(344, 20);
+            this.txtNombre.Size = new System.Drawing.Size(266, 20);
             this.txtNombre.TabIndex = 78;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
@@ -162,9 +160,9 @@
             // 
             this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIdentificacion.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdentificacion.Location = new System.Drawing.Point(299, 53);
+            this.txtIdentificacion.Location = new System.Drawing.Point(377, 53);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(344, 20);
+            this.txtIdentificacion.Size = new System.Drawing.Size(266, 20);
             this.txtIdentificacion.TabIndex = 77;
             this.txtIdentificacion.TextChanged += new System.EventHandler(this.txtIdentificacion_TextChanged);
             this.txtIdentificacion.Leave += new System.EventHandler(this.txtIdentificacion_Leave);
@@ -209,7 +207,7 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre ";
             // 
-            // CrearTurista
+            // CrearProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,7 +221,7 @@
             this.Controls.Add(this.label8);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "CrearTurista";
+            this.Name = "CrearProveedor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CrearTurista";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

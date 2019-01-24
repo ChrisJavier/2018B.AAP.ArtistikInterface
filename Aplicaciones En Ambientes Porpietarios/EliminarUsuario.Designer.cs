@@ -96,7 +96,7 @@
             this.groupBox1.Size = new System.Drawing.Size(585, 98);
             this.groupBox1.TabIndex = 79;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar ";
+            this.groupBox1.Text = "Eliminar Usuario";
             // 
             // label1
             // 
@@ -112,8 +112,10 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Código",
-            "Tipo"});
+            "Cédula",
+            "Cargo",
+            "Nombre",
+            "Apellido"});
             this.comboBox1.Location = new System.Drawing.Point(10, 58);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 31);

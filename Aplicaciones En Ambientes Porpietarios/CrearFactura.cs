@@ -35,14 +35,14 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
             panel1.Visible = true;
             panel1.Location = new Point(199, 155);
-            if (radioButton1.Checked==true&& radioButton2.Checked == false)
+            /*if (radioButton1.Checked==true&& radioButton2.Checked == false)
             {
                 dataGridView2.DataSource = bd.SelectDataTable("select CI,RUC,NOMBRE,APELLIDO,DIRECCION,TELEFONO from PERSONA where CI='" + txtIdentificacion.Text + "'");
             }
             else if (radioButton2.Checked==true&& radioButton1.Checked == false)
             {
                 dataGridView2.DataSource = bd.SelectDataTable("select CI,RUC,NOMBRE,APELLIDO,DIRECCION,TELEFONO from PERSONA where RUC='" + txtIdentificacion.Text + "'");
-            }
+            }*/
 
         }
 
@@ -64,31 +64,20 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            panel3.Visible = true;
-            panel3.Location = new Point(408, 88);
+            CrearCliente participante = new CrearCliente();
+            participante.Show();
+            panel3.Visible = false;
         }
 
         private void pictureBox2_MouseHover(object sender, EventArgs e)
         {
-            pictureBox2.Size = new Size(73, 58);
-            panel3.Visible = true;
-            panel3.Location = new Point(408, 88);
+            
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
             pictureBox2.Size = new Size(67, 52);
             
-        }
-
-        private void pictureBox3_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox3.Size = new Size(73, 58);
-        }
-
-        private void pictureBox3_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox3.Size = new Size(67, 52);
         }
 
         private void panel3_MouseHover(object sender, EventArgs e)
@@ -306,7 +295,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.RemoveAt(filaSelecciona);
+            //dataGridView1.Rows.RemoveAt(filaSelecciona);
             
         }
 
@@ -420,6 +409,16 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             {
                 MessageBox.Show("Error al agregar");
             }
+        }
+
+        private void pictureBox3_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_MouseHover(object sender, EventArgs e)
+        {
+
         }
     }
 }

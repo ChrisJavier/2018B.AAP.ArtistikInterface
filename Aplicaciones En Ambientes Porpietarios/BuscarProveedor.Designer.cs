@@ -77,7 +77,7 @@
             this.groupBox1.Size = new System.Drawing.Size(581, 114);
             this.groupBox1.TabIndex = 77;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar ";
+            this.groupBox1.Text = "Buscar Proveedor";
             // 
             // label1
             // 
@@ -93,8 +93,7 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "RUC",
-            "Nombre"});
+            "RUC"});
             this.comboBox1.Location = new System.Drawing.Point(6, 66);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 31);

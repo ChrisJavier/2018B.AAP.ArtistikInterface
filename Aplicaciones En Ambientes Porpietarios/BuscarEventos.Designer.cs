@@ -79,7 +79,7 @@
             this.groupBox1.Size = new System.Drawing.Size(581, 114);
             this.groupBox1.TabIndex = 74;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar ";
+            this.groupBox1.Text = "Buscar Evento";
             // 
             // label1
             // 
@@ -96,7 +96,12 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Código",
-            "Tipo"});
+            "Tipo",
+            "Hora de Inicio",
+            "Hora de Finalización",
+            "Coordinador",
+            "Equipo de Trabajo",
+            "Cliente"});
             this.comboBox1.Location = new System.Drawing.Point(6, 66);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(135, 31);

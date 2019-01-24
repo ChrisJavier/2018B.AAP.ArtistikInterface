@@ -283,8 +283,8 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.TopLevel = false;
             FormEE.AutoScroll = true;
             panel1.Controls.Clear();
-            panel1.Size = new Size(763, 420);
-            panel1.Location = new Point(50, 100);
+            //panel1.Size = new Size(763, 420);
+            //panel1.Location = new Point(50, 100);
             panel1.Controls.Add(FormEE);
             FormEE.Dock = DockStyle.Left;
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -294,6 +294,104 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         private void crearFacturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CrearFactura FormEE = new CrearFactura();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            panel1.Location = new Point(0, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void modificarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarFactura FormEE = new ModificarFactura();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            panel1.Location = new Point(0, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void consultarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultarFactura FormEE = new ConsultarFactura();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            CrearEmpleado FormEE = new CrearEmpleado();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void eliminarFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AnularFactura FormEE = new AnularFactura();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            ModificarEmpleado FormEE = new ModificarEmpleado();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            BuscarEmpleado FormEE = new BuscarEmpleado();
+            FormEE.TopLevel = false;
+            FormEE.AutoScroll = true;
+            panel1.Controls.Clear();
+            //panel1.Size = new Size(800, 800);
+            //panel1.Location = new Point(50, 100);
+            panel1.Controls.Add(FormEE);
+            FormEE.Dock = DockStyle.Left;
+            FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            FormEE.Show();
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            EliminarEmpleado FormEE = new EliminarEmpleado();
             FormEE.TopLevel = false;
             FormEE.AutoScroll = true;
             panel1.Controls.Clear();

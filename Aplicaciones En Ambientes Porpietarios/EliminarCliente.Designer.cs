@@ -59,7 +59,7 @@
             this.groupBox1.Size = new System.Drawing.Size(585, 98);
             this.groupBox1.TabIndex = 75;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar ";
+            this.groupBox1.Text = "Eliminar Cliente";
             // 
             // label1
             // 
@@ -72,7 +72,10 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cédula de Identidad"});
             this.comboBox1.Location = new System.Drawing.Point(10, 58);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 31);
@@ -112,7 +115,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(632, 28);
+            this.pictureBox4.Location = new System.Drawing.Point(632, 19);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(49, 42);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,7 +130,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(632, 86);
+            this.pictureBox1.Location = new System.Drawing.Point(632, 77);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 42);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
