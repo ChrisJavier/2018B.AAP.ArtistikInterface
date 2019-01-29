@@ -28,7 +28,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void modificarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ModificarEvento buscarCurso = new ModificarEvento();
+            ModificarEventos buscarCurso = new ModificarEventos();
             buscarCurso.TopLevel = false;
             buscarCurso.AutoScroll = true;
             panel1.Controls.Clear();

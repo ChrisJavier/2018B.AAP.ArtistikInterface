@@ -342,7 +342,6 @@ C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.EliminarUsuario.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.BuscarProveedor.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.Proveedores.resources
-C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarEvento.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarCliente.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarGuia.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarUsuario.resources
@@ -452,3 +451,4 @@ C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.CrearParametro.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.EliminarParametro.resources
 C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarParametro.resources
+C:\Users\User\Desktop\scanner\ProyectoFinal\Proyecto\2018B.AAP.ArtistikInterface\Aplicaciones En Ambientes Porpietarios\obj\Debug\Aplicaciones_En_Ambientes_Porpietarios.ModificarEventos.resources

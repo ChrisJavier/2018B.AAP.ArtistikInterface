@@ -78,7 +78,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void cmbTipo_MouseEnter(object sender, EventArgs e)
         {
-            if (cmbTipoB.SelectedIndex.Equals(-1))
+            if (cmbTipo.SelectedIndex.Equals(-1))
             {
                 lblTipo.Visible = true;
             }

@@ -112,6 +112,16 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AAP_2018DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AAP_2018DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AAP_2018DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="AnularFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -553,6 +563,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="AAP_2018DataSet.xsc">
+      <DependentUpon>AAP_2018DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AAP_2018DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AAP_2018DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AAP_2018DataSet.xss">
+      <DependentUpon>AAP_2018DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AAP_2018DataSet1.xsc">
+      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AAP_2018DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AAP_2018DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AAP_2018DataSet1.xss">
+      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

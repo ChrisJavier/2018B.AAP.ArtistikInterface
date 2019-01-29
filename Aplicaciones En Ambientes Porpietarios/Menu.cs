@@ -139,7 +139,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void modificarEventoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ModificarEvento FormCM = new ModificarEvento();
+            ModificarEventos FormCM = new ModificarEventos();
             FormCM.TopLevel = false;
             FormCM.AutoScroll = true;
             panel1.Controls.Clear();

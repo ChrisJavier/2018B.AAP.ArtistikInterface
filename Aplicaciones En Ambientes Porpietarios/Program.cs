@@ -16,7 +16,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BuscarEventos());
+            Application.Run(new CrearEvento());
         }
     }
 }
