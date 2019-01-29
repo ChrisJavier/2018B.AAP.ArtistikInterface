@@ -85,7 +85,7 @@
             this.groupBox1.Size = new System.Drawing.Size(585, 98);
             this.groupBox1.TabIndex = 92;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar Usuario";
+            this.groupBox1.Text = "Consulta de Usuario";
             // 
             // label1
             // 

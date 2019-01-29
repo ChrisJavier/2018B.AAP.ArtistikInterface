@@ -64,7 +64,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
             if (comboBox1.Text.Equals("") || textBox1.Text.Equals(""))
             {
-                MessageBox.Show("Ingrese parametros de busqueda");
+               // MessageBox.Show("Ingrese parametros de busqueda");
             }
             else
             {

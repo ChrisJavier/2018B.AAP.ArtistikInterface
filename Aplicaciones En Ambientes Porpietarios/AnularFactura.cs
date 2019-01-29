@@ -21,5 +21,11 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
 
         }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+        }
     }
 }

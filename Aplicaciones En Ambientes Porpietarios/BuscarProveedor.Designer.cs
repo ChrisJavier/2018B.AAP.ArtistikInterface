@@ -77,7 +77,7 @@
             this.groupBox1.Size = new System.Drawing.Size(581, 114);
             this.groupBox1.TabIndex = 77;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar Proveedor";
+            this.groupBox1.Text = "Consulta de Proveedor";
             // 
             // label1
             // 

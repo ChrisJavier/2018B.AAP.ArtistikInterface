@@ -72,9 +72,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(28, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(298, 47);
+            this.label8.Size = new System.Drawing.Size(382, 47);
             this.label8.TabIndex = 77;
-            this.label8.Text = "Modificar Proveedor";
+            this.label8.Text = "Modificación de Proveedor";
             // 
             // panel1
             // 

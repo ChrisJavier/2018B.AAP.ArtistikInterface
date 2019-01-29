@@ -30,29 +30,29 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         private void buscar()
         {
-            if (comboBox1.Text.Equals("Nombre"))
+            if (cmbTipoB.Text.Equals("Nombre"))
             {
-                string consultar = "SELECT * FROM CURSO WHERE NOMBRE ='" + textBox1.Text + "'";
+                string consultar = "SELECT * FROM CURSO WHERE NOMBRE ='" + txtSearch.Text + "'";
                 dataGridView1.DataSource = bd.SelectDataTable(consultar);
             }
-            else if (comboBox1.Text.Equals("Nivel"))
+            else if (cmbTipoB.Text.Equals("Nivel"))
             {
-                string consultar = "SELECT * FROM CURSO WHERE NIVEL ='" + textBox1.Text + "'";
+                string consultar = "SELECT * FROM CURSO WHERE NIVEL ='" + txtSearch.Text + "'";
                 dataGridView1.DataSource = bd.SelectDataTable(consultar);
             }
-            else if (comboBox1.Text.Equals("Tipo"))
+            else if (cmbTipoB.Text.Equals("Tipo"))
             {
-                string consultar = "SELECT * FROM CURSO WHERE TIPO ='" + textBox1.Text + "'";
+                string consultar = "SELECT * FROM CURSO WHERE TIPO ='" + txtSearch.Text + "'";
                 dataGridView1.DataSource = bd.SelectDataTable(consultar);
             }
-            else if (comboBox1.Text.Equals("Día"))
+            else if (cmbTipoB.Text.Equals("Día"))
             {
-                string consultar = "SELECT * FROM CURSO WHERE DIA ='" + textBox1.Text + "'";
+                string consultar = "SELECT * FROM CURSO WHERE DIA ='" + txtSearch.Text + "'";
                 dataGridView1.DataSource = bd.SelectDataTable(consultar);
             }
-            else if (comboBox1.Text.Equals("Hora"))
+            else if (cmbTipoB.Text.Equals("Hora"))
             {
-                string consultar = "SELECT * FROM CURSO WHERE HORA ='" + textBox1.Text + "'";
+                string consultar = "SELECT * FROM CURSO WHERE HORA ='" + txtSearch.Text + "'";
                 dataGridView1.DataSource = bd.SelectDataTable(consultar);
             }
 
@@ -60,12 +60,12 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox4_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox4.Size = new Size(49, 42);
+            pBoxReturn.Size = new Size(49, 42);
         }
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)
         {
-            pictureBox4.Size = new Size(55, 48);
+            pBoxReturn.Size = new Size(55, 48);
         }
 
         private void pictureBox5_MouseHover(object sender, EventArgs e)
@@ -76,6 +76,48 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         private void pictureBox5_MouseLeave(object sender, EventArgs e)
         {
             pictureBox5.Size = new Size(49, 31);
+        }
+
+        private void txtSearch_MouseEnter(object sender, EventArgs e)
+        {
+            lblSearch.Visible = false;
+        }
+
+        private void txtSearch_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Equals(""))
+            {
+                lblSearch.Visible = true;
+            }
+        }
+
+        private void cmbTipoB_MouseEnter(object sender, EventArgs e)
+        {
+            lblTipo.Visible = false;
+        }
+
+        private void cmbTipoB_MouseLeave(object sender, EventArgs e)
+        {
+            if (cmbTipoB.SelectedIndex.Equals(-1))
+            {
+                lblTipo.Visible = true;
+            }
+        }
+
+        private void pBoxLimpiar_MouseHover(object sender, EventArgs e)
+        {
+            pBoxLimpiar.Size = new Size(55, 55);
+        }
+
+        private void pBoxLimpiar_MouseLeave(object sender, EventArgs e)
+        {
+            pBoxLimpiar.Size = new Size(49, 49);
+        }
+
+        private void pBoxLimpiar_Click(object sender, EventArgs e)
+        {
+            cmbTipoB.SelectedIndex = -1;
+            txtSearch.Text = "";
         }
     }
 }

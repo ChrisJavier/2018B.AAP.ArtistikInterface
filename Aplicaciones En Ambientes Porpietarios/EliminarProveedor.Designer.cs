@@ -88,7 +88,7 @@
             this.groupBox1.Size = new System.Drawing.Size(585, 98);
             this.groupBox1.TabIndex = 83;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Eliminar Proveedor";
+            this.groupBox1.Text = "Eliminación de Proveedor";
             // 
             // label1
             // 

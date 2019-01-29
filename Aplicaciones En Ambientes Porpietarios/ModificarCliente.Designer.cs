@@ -71,9 +71,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(26, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(254, 47);
+            this.label8.Size = new System.Drawing.Size(338, 47);
             this.label8.TabIndex = 75;
-            this.label8.Text = "Modificar Cliente";
+            this.label8.Text = "Modificación de Cliente";
             // 
             // pictureBox2
             // 
@@ -312,7 +312,7 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Location = new System.Drawing.Point(17, 405);
+            this.panel1.Location = new System.Drawing.Point(34, 405);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(614, 259);
             this.panel1.TabIndex = 88;

@@ -18,11 +18,11 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         public CrearEvento()
         {
             InitializeComponent();
+            
             //cargarComboBox();
-            //dateTimePicker1.Value = System.DateTime.Today;
-            //dateTimePicker2.Value = System.DateTime.Today;
-            //dateTimePicker1.MinDate = System.DateTime.Today;
-            //comboBox3.SelectedIndex = -1;
+            dTPDate.Value = System.DateTime.Today;
+            dTPDate.MinDate = System.DateTime.Today;
+            cmbCoor.SelectedIndex = -1;
         }
 
 
@@ -32,32 +32,32 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         private void pictureBox2_MouseHover(object sender, EventArgs e)
         {
-            pictureBox2.Size = new Size(79, 55);
+            pBoxSave.Size = new Size(79, 55);
         }
 
         private void pictureBox2_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox2.Size = new Size(73, 49);
+            pBoxSave.Size = new Size(73, 49);
         }
 
         private void pictureBox3_MouseHover(object sender, EventArgs e)
         {
-            pictureBox3.Size = new Size(79, 55);
+            pBoxLimpiar.Size = new Size(79, 55);
         }
 
         private void pictureBox3_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox3.Size = new Size(73, 49);
+            pBoxLimpiar.Size = new Size(73, 49);
         }
 
         private void pictureBox4_MouseHover(object sender, EventArgs e)
         {
-            pictureBox4.Size = new Size(79, 55);
+            pBoxReturn.Size = new Size(79, 55);
         }
 
         private void pictureBox4_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox4.Size = new Size(73, 49);
+            pBoxReturn.Size = new Size(73, 49);
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -79,66 +79,49 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            guardar();
+            //guardar();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-           
-            textBox2.Text = "";
-            
-            dateTimePicker1.Text = "";
-            dateTimePicker2.Text = "";
-            comboBox1.Text = "";
-            comboBox2.Text = "";
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            txtCodeEvent.Text = "";
+            cmbTipo.SelectedIndex = -1;
+            dTPDate.Value = DateTime.Now;
+            txtAddress.Text = "";
+            dateTPHI.Value= new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 6, 0, 0);
+            dTPHDF2.Value= new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 7, 0, 0);
+            cmbCli.SelectedIndex = -1;
+            cmbCoor.SelectedIndex = -1;
+            cmbEDT.SelectedIndex = -1;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                textBox2.Text = openFileDialog1.FileName;
+                txtAddress.Text = openFileDialog1.FileName;
             }
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(textBox2.Text);
-        }
-
-        private void pictureBox5_MouseLeave(object sender, EventArgs e)
-        {
-            pictureBox5.Size = new Size(40, 41);
-        }
-        private void pictureBox5_MouseHover(object sender, EventArgs e)
-        {
-            pictureBox5.Size = new Size(46, 47);
+            System.Diagnostics.Process.Start(txtAddress.Text);
         }
         private void pictureBox1_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox1.Size = new Size(40, 41);
+            pBoxEDT.Size = new Size(40, 41);
         }
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
-            pictureBox1.Size = new Size(46, 47);
+            pBoxEDT.Size = new Size(46, 47);
         }
         private void pictureBox6_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox6.Size = new Size(40, 41);
+            pBoxClient.Size = new Size(40, 41);
         }
         private void pictureBox6_MouseHover(object sender, EventArgs e)
         {
-            pictureBox6.Size = new Size(46, 47);
-        }
-
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            pBoxClient.Size = new Size(46, 47);
         }
         private void guardar()
         {
@@ -148,7 +131,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
            // string nombreCurso = bd.selectstring("EXEC DBO.cursoNombreNivel @nombre='" + textBox1.Text + "'");
             //string nivelCurso = bd.selectstring("EXEC DBO.cursoNivel @nivel='" + /*comboBox4.Text*/ + "'");
-            string nombres = comboBox3.Text;
+            string nombres = cmbCoor.Text;
             string[] profesor = nombres.Split(' ');
             string nombreP = profesor[0];
             string apellidoP = profesor[1];
@@ -203,51 +186,158 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         private void cargarComboBox()
         {
-            comboBox3.ValueMember = "NOMBRES";
+            cmbCoor.ValueMember = "NOMBRES";
             string nombreProfesores = "select (replace(NOMBRE,' ', '')+' '+REPLACE(APELLIDO,' ', '')) as NOMBRES from INSTRUCTOR INNER JOIN PERSONA ON INSTRUCTOR.CODPERSONA=PERSONA.CODPERSONA";
-            comboBox3.DataSource = bd.SelectDataTable(nombreProfesores);
+            cmbCoor.DataSource = bd.SelectDataTable(nombreProfesores);
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             DateTime dateTime = new DateTime();
-            dateTime = dateTimePicker1.Value;
-            dateTimePicker2.MinDate = dateTime;
+            dateTime = dTPDate.Value;
+           // dTPHDF2.MinDate = dateTime;
         }
 
-        private void CrearCurso_MouseMove(object sender, MouseEventArgs e)
+        private void txtCodeEvent_MouseEnter(object sender, EventArgs e)
         {
-                        
+            lblcode.Visible = false;
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
+        private void txtCodeEvent_MouseLeave(object sender, EventArgs e)
         {
+            if (txtCodeEvent.Text.Equals("")) {
+                lblcode.Visible = true;
+            } 
+        }
+
+        private void comboBox5_MouseEnter(object sender, EventArgs e)
+        {
+            lblTipo.Visible = false;
+        }
+
+        private void comboBox5_MouseLeave(object sender, EventArgs e)
+        {
+            if (cmbTipo.SelectedIndex.Equals(-1))
+            {
+                lblTipo.Visible = true;
+            }
+        }
+
+        private void textBox2_MouseEnter(object sender, EventArgs e)
+        {
+            lblAddresss.Visible = false;
+        }
+
+        private void txtAddress_MouseLeave(object sender, EventArgs e)
+        {
+            if (cmbTipo.SelectedIndex.Equals(-1))
+            {
+                lblAddresss.Visible = true;
+            }
+        }
+
+        private void dateTPHI_MouseEnter(object sender, EventArgs e)
+        {
+           
+                lblHI.Visible = false;
             
         }
 
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void dateTPHI_MouseLeave(object sender, EventArgs e)
         {
-
+            
+            if (Convert.ToInt32(dateTPHI.Value.ToString("HH"))<6 || int.Parse(dateTPHI.Value.ToString("HH")) > 20)
+            {
+                lblHI.Visible = true;
+            }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void dTPHF_MouseEnter(object sender, EventArgs e)
         {
 
+            lblHF.Visible = false;
         }
 
-        private void CrearCita_Load(object sender, EventArgs e)
+        private void dTPHF_MouseLeave(object sender, EventArgs e)
         {
-
+            if (Convert.ToInt32(dTPHDF2.Value.ToString("HH")) < 7 || int.Parse(dTPHDF2.Value.ToString("HH")) > 0)
+            {
+                lblHF.Visible = true;
+            }
+            if (Convert.ToInt32(dateTPHI.Value.ToString("HH")) < 6 || int.Parse(dateTPHI.Value.ToString("HH")) > 20)
+            {
+                lblHI.Visible = true;
+            }
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
+        private void comboBox3_MouseEnter(object sender, EventArgs e)
         {
-
+            lblCoord.Visible = false;
         }
 
-        private void pictureBox6_Click_1(object sender, EventArgs e)
+        private void comboBox3_MouseLeave(object sender, EventArgs e)
         {
-
+            if (cmbCoor.SelectedIndex.Equals(-1))
+            {
+                lblCoord.Visible = true;
+            }
         }
+
+        private void cmbEDT_MouseEnter(object sender, EventArgs e)
+        {
+            lblEDTrabajo.Visible = false;
+        }
+
+        private void cmbEDT_MouseLeave(object sender, EventArgs e)
+        {
+            if (cmbEDT.SelectedIndex.Equals(-1))
+            {
+                lblEDTrabajo.Visible = true;
+            }
+        }
+
+        private void cmbCli_MouseEnter(object sender, EventArgs e)
+        {
+            lblClient.Visible = false;
+        }
+
+        private void cmbCli_MouseLeave(object sender, EventArgs e)
+        {
+            if (cmbCli.SelectedIndex.Equals(-1))
+            {
+                lblClient.Visible = true;
+            }
+        }
+
+        private void txtCodeEvent_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar>=32 && e.KeyChar<=47) || (e.KeyChar >= 58 && e.KeyChar <= 255) )
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void pBoxEDT_MouseHover(object sender, EventArgs e)
+        {
+            pBoxEDT.Size = new Size(46, 37);
+        }
+
+        private void pBoxEDT_MouseLeave(object sender, EventArgs e)
+        {
+            pBoxEDT.Size = new Size(40, 31);
+        }
+
+        private void pictureBox6_MouseHover_1(object sender, EventArgs e)
+        {
+            pBoxClient.Size = new Size(46, 38);
+        }
+
+        private void pBoxClient_MouseLeave(object sender, EventArgs e)
+        {
+            pBoxClient.Size = new Size(40, 32);
+        }
+
+    
     }
 }

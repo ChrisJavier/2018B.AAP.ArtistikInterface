@@ -255,5 +255,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }*/
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -42,39 +42,47 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CrearEvento));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dTPDate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pBoxReturn = new System.Windows.Forms.PictureBox();
+            this.pBoxLimpiar = new System.Windows.Forms.PictureBox();
+            this.pBoxSave = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblClient = new System.Windows.Forms.Label();
+            this.lblEDTrabajo = new System.Windows.Forms.Label();
+            this.lblCoord = new System.Windows.Forms.Label();
+            this.lblHF = new System.Windows.Forms.Label();
+            this.lblHI = new System.Windows.Forms.Label();
+            this.lblAddresss = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblcode = new System.Windows.Forms.Label();
+            this.txtCodeEvent = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pBoxClient = new System.Windows.Forms.PictureBox();
+            this.pBoxEDT = new System.Windows.Forms.PictureBox();
+            this.cmbCli = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbEDT = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dateTPHI = new System.Windows.Forms.DateTimePicker();
+            this.cmbCoor = new System.Windows.Forms.ComboBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.toolT2 = new System.Windows.Forms.ToolTip(this.components);
+            this.dTPHDF2 = new System.Windows.Forms.DateTimePicker();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxLimpiar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxSave)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxEDT)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -93,41 +101,30 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(261, 172);
+            this.label3.Location = new System.Drawing.Point(12, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(151, 23);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hora de Finalización:";
             // 
-            // dateTimePicker1
+            // dTPDate
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(121, 99);
-            this.dateTimePicker1.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(137, 30);
-            this.dateTimePicker1.TabIndex = 5;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 8, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CustomFormat = "HH:mm";
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(421, 170);
-            this.dateTimePicker2.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(119, 30);
-            this.dateTimePicker2.TabIndex = 6;
-            this.dateTimePicker2.Value = new System.DateTime(2018, 8, 1, 0, 0, 0, 0);
+            this.dTPDate.CustomFormat = "yyyy-MM-dd";
+            this.dTPDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTPDate.Location = new System.Drawing.Point(122, 99);
+            this.dTPDate.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dTPDate.Name = "dTPDate";
+            this.dTPDate.Size = new System.Drawing.Size(137, 30);
+            this.dTPDate.TabIndex = 5;
+            this.dTPDate.Value = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
+            this.dTPDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(9, 137);
+            this.label7.Location = new System.Drawing.Point(9, 145);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(76, 23);
             this.label7.TabIndex = 11;
@@ -138,255 +135,216 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(9, 170);
+            this.label9.Location = new System.Drawing.Point(9, 184);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(107, 23);
             this.label9.TabIndex = 17;
             this.label9.Text = "Hora de Inicio:";
             // 
-            // pictureBox4
+            // pBoxReturn
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(605, 380);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(73, 49);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 69;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Regresar");
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
-            this.pictureBox4.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
+            this.pBoxReturn.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxReturn.Image = ((System.Drawing.Image)(resources.GetObject("pBoxReturn.Image")));
+            this.pBoxReturn.Location = new System.Drawing.Point(668, 420);
+            this.pBoxReturn.Name = "pBoxReturn";
+            this.pBoxReturn.Size = new System.Drawing.Size(73, 49);
+            this.pBoxReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxReturn.TabIndex = 69;
+            this.pBoxReturn.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxReturn, "Regresar");
+            this.pBoxReturn.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pBoxReturn.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
+            this.pBoxReturn.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
             // 
-            // pictureBox3
+            // pBoxLimpiar
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(333, 380);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(73, 49);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 68;
-            this.pictureBox3.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox3, "Limpiar");
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            this.pictureBox3.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
-            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox3_MouseHover);
+            this.pBoxLimpiar.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("pBoxLimpiar.Image")));
+            this.pBoxLimpiar.Location = new System.Drawing.Point(372, 420);
+            this.pBoxLimpiar.Name = "pBoxLimpiar";
+            this.pBoxLimpiar.Size = new System.Drawing.Size(73, 49);
+            this.pBoxLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxLimpiar.TabIndex = 68;
+            this.pBoxLimpiar.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxLimpiar, "Limpiar");
+            this.pBoxLimpiar.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pBoxLimpiar.MouseLeave += new System.EventHandler(this.pictureBox3_MouseLeave);
+            this.pBoxLimpiar.MouseHover += new System.EventHandler(this.pictureBox3_MouseHover);
             // 
-            // pictureBox2
+            // pBoxSave
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(78, 380);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(73, 49);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 67;
-            this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "Guardar");
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
-            this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
+            this.pBoxSave.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxSave.Image = ((System.Drawing.Image)(resources.GetObject("pBoxSave.Image")));
+            this.pBoxSave.Location = new System.Drawing.Point(66, 420);
+            this.pBoxSave.Name = "pBoxSave";
+            this.pBoxSave.Size = new System.Drawing.Size(73, 49);
+            this.pBoxSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxSave.TabIndex = 67;
+            this.pBoxSave.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxSave, "Guardar");
+            this.pBoxSave.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pBoxSave.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
+            this.pBoxSave.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.lblClient);
+            this.groupBox2.Controls.Add(this.lblEDTrabajo);
+            this.groupBox2.Controls.Add(this.lblCoord);
+            this.groupBox2.Controls.Add(this.lblHF);
+            this.groupBox2.Controls.Add(this.lblHI);
+            this.groupBox2.Controls.Add(this.lblAddresss);
+            this.groupBox2.Controls.Add(this.lblDate);
+            this.groupBox2.Controls.Add(this.lblTipo);
+            this.groupBox2.Controls.Add(this.lblcode);
+            this.groupBox2.Controls.Add(this.txtCodeEvent);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.pBoxClient);
+            this.groupBox2.Controls.Add(this.pBoxEDT);
+            this.groupBox2.Controls.Add(this.cmbCli);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.cmbEDT);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.dateTPHI);
+            this.groupBox2.Controls.Add(this.cmbCoor);
+            this.groupBox2.Controls.Add(this.txtAddress);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.cmbTipo);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.pictureBox5);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.dateTimePicker1);
+            this.groupBox2.Controls.Add(this.dTPDate);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
             this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.dTPHDF2);
             this.groupBox2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(68, 48);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(639, 326);
+            this.groupBox2.Size = new System.Drawing.Size(673, 366);
             this.groupBox2.TabIndex = 70;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
             this.groupBox2.UseCompatibleTextRendering = true;
             // 
-            // pictureBox6
+            // lblClient
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(543, 283);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 41);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 89;
-            this.pictureBox6.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox6, "Registrar Profesor");
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click_1);
+            this.lblClient.AutoSize = true;
+            this.lblClient.BackColor = System.Drawing.Color.DarkRed;
+            this.lblClient.ForeColor = System.Drawing.Color.White;
+            this.lblClient.Location = new System.Drawing.Point(366, 329);
+            this.lblClient.Name = "lblClient";
+            this.lblClient.Size = new System.Drawing.Size(173, 23);
+            this.lblClient.TabIndex = 94;
+            this.lblClient.Text = "Error, Escoja una opción";
+            this.lblClient.Visible = false;
             // 
-            // pictureBox1
+            // lblEDTrabajo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(543, 239);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 88;
-            this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "Registrar Profesor");
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            this.lblEDTrabajo.AutoSize = true;
+            this.lblEDTrabajo.BackColor = System.Drawing.Color.DarkRed;
+            this.lblEDTrabajo.ForeColor = System.Drawing.Color.White;
+            this.lblEDTrabajo.Location = new System.Drawing.Point(364, 295);
+            this.lblEDTrabajo.Name = "lblEDTrabajo";
+            this.lblEDTrabajo.Size = new System.Drawing.Size(173, 23);
+            this.lblEDTrabajo.TabIndex = 99;
+            this.lblEDTrabajo.Text = "Error, Escoja una opción";
+            this.lblEDTrabajo.Visible = false;
             // 
-            // comboBox2
+            // lblCoord
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Enabled = false;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox2.Location = new System.Drawing.Point(272, 284);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(268, 31);
-            this.comboBox2.TabIndex = 87;
+            this.lblCoord.AutoSize = true;
+            this.lblCoord.BackColor = System.Drawing.Color.DarkRed;
+            this.lblCoord.ForeColor = System.Drawing.Color.White;
+            this.lblCoord.Location = new System.Drawing.Point(362, 255);
+            this.lblCoord.Name = "lblCoord";
+            this.lblCoord.Size = new System.Drawing.Size(173, 23);
+            this.lblCoord.TabIndex = 98;
+            this.lblCoord.Text = "Error, Escoja una opción";
+            this.lblCoord.Visible = false;
             // 
-            // label4
+            // lblHF
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(12, 284);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 23);
-            this.label4.TabIndex = 86;
-            this.label4.Text = "Cliente:";
+            this.lblHF.AutoSize = true;
+            this.lblHF.BackColor = System.Drawing.Color.DarkRed;
+            this.lblHF.ForeColor = System.Drawing.Color.White;
+            this.lblHF.Location = new System.Drawing.Point(288, 212);
+            this.lblHF.Name = "lblHF";
+            this.lblHF.Size = new System.Drawing.Size(369, 23);
+            this.lblHF.TabIndex = 97;
+            this.lblHF.Text = "Error, Ingrese una hora entre las 7 hasta las 00 horas";
+            this.lblHF.Visible = false;
             // 
-            // comboBox1
+            // lblHI
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox1.Location = new System.Drawing.Point(272, 247);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(265, 31);
-            this.comboBox1.TabIndex = 85;
+            this.lblHI.AutoSize = true;
+            this.lblHI.BackColor = System.Drawing.Color.DarkRed;
+            this.lblHI.ForeColor = System.Drawing.Color.White;
+            this.lblHI.Location = new System.Drawing.Point(291, 178);
+            this.lblHI.Name = "lblHI";
+            this.lblHI.Size = new System.Drawing.Size(369, 23);
+            this.lblHI.TabIndex = 96;
+            this.lblHI.Text = "Error, Ingrese una hora entre las 6 hasta las 20 horas";
+            this.lblHI.Visible = false;
             // 
-            // label1
+            // lblAddresss
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 247);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "Equipo de Trabajo:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblAddresss.AutoSize = true;
+            this.lblAddresss.BackColor = System.Drawing.Color.DarkRed;
+            this.lblAddresss.ForeColor = System.Drawing.Color.White;
+            this.lblAddresss.Location = new System.Drawing.Point(342, 138);
+            this.lblAddresss.Name = "lblAddresss";
+            this.lblAddresss.Size = new System.Drawing.Size(198, 23);
+            this.lblAddresss.TabIndex = 95;
+            this.lblAddresss.Text = "Error, Ingrese una dirección";
+            this.lblAddresss.Visible = false;
             // 
-            // dateTimePicker3
+            // lblDate
             // 
-            this.dateTimePicker3.CustomFormat = "HH:mm";
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(122, 172);
-            this.dateTimePicker3.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(119, 30);
-            this.dateTimePicker3.TabIndex = 83;
-            this.dateTimePicker3.Value = new System.DateTime(2018, 8, 1, 0, 0, 0, 0);
+            this.lblDate.AutoSize = true;
+            this.lblDate.BackColor = System.Drawing.Color.DarkRed;
+            this.lblDate.ForeColor = System.Drawing.Color.White;
+            this.lblDate.Location = new System.Drawing.Point(261, 99);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(305, 23);
+            this.lblDate.TabIndex = 94;
+            this.lblDate.Text = "Error, Escoja una fecha posterior a la actual";
+            this.lblDate.Visible = false;
             // 
-            // comboBox3
+            // lblTipo
             // 
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Enabled = false;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.comboBox3.Location = new System.Drawing.Point(272, 210);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(265, 31);
-            this.comboBox3.TabIndex = 82;
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.BackColor = System.Drawing.Color.DarkRed;
+            this.lblTipo.ForeColor = System.Drawing.Color.White;
+            this.lblTipo.Location = new System.Drawing.Point(300, 62);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(173, 23);
+            this.lblTipo.TabIndex = 93;
+            this.lblTipo.Text = "Error, Escoja una opción";
+            this.lblTipo.Visible = false;
             // 
-            // textBox2
+            // lblcode
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(419, 30);
-            this.textBox2.TabIndex = 79;
+            this.lblcode.AutoSize = true;
+            this.lblcode.BackColor = System.Drawing.Color.DarkRed;
+            this.lblcode.ForeColor = System.Drawing.Color.White;
+            this.lblcode.Location = new System.Drawing.Point(298, 26);
+            this.lblcode.Name = "lblcode";
+            this.lblcode.Size = new System.Drawing.Size(237, 23);
+            this.lblcode.TabIndex = 92;
+            this.lblcode.Text = "Error, Ingrese el código del evento";
+            this.lblcode.Visible = false;
             // 
-            // label11
+            // txtCodeEvent
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(9, 210);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(97, 23);
-            this.label11.TabIndex = 78;
-            this.label11.Text = "Coordinador:";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "Nacional",
-            "Extranjeros"});
-            this.comboBox5.Location = new System.Drawing.Point(121, 62);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(178, 31);
-            this.comboBox5.TabIndex = 76;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(6, 65);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 23);
-            this.label10.TabIndex = 75;
-            this.label10.Text = "Tipo:";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(546, 192);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(40, 41);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 73;
-            this.pictureBox5.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox5, "Registrar Profesor");
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            this.pictureBox5.MouseLeave += new System.EventHandler(this.pictureBox5_MouseLeave);
-            this.pictureBox5.MouseHover += new System.EventHandler(this.pictureBox5_MouseHover);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(332, 9);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(201, 47);
-            this.label8.TabIndex = 71;
-            this.label8.Text = "Crear Evento";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.txtCodeEvent.Location = new System.Drawing.Point(122, 26);
+            this.txtCodeEvent.Name = "txtCodeEvent";
+            this.txtCodeEvent.Size = new System.Drawing.Size(176, 30);
+            this.txtCodeEvent.TabIndex = 91;
+            this.txtCodeEvent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodeEvent_KeyPress);
+            this.txtCodeEvent.MouseEnter += new System.EventHandler(this.txtCodeEvent_MouseEnter);
+            this.txtCodeEvent.MouseLeave += new System.EventHandler(this.txtCodeEvent_MouseLeave);
             // 
             // label5
             // 
@@ -399,12 +357,186 @@
             this.label5.TabIndex = 90;
             this.label5.Text = "Código:";
             // 
-            // textBox1
+            // pBoxClient
             // 
-            this.textBox1.Location = new System.Drawing.Point(122, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 30);
-            this.textBox1.TabIndex = 91;
+            this.pBoxClient.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxClient.Image = ((System.Drawing.Image)(resources.GetObject("pBoxClient.Image")));
+            this.pBoxClient.Location = new System.Drawing.Point(543, 328);
+            this.pBoxClient.Name = "pBoxClient";
+            this.pBoxClient.Size = new System.Drawing.Size(40, 32);
+            this.pBoxClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxClient.TabIndex = 89;
+            this.pBoxClient.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxClient, "Registrar Cliente");
+            this.pBoxClient.MouseLeave += new System.EventHandler(this.pBoxClient_MouseLeave);
+            this.pBoxClient.MouseHover += new System.EventHandler(this.pictureBox6_MouseHover_1);
+            // 
+            // pBoxEDT
+            // 
+            this.pBoxEDT.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxEDT.Image = ((System.Drawing.Image)(resources.GetObject("pBoxEDT.Image")));
+            this.pBoxEDT.Location = new System.Drawing.Point(543, 292);
+            this.pBoxEDT.Name = "pBoxEDT";
+            this.pBoxEDT.Size = new System.Drawing.Size(40, 31);
+            this.pBoxEDT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxEDT.TabIndex = 88;
+            this.pBoxEDT.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxEDT, "Crear Equipo de Trabajo");
+            this.pBoxEDT.MouseLeave += new System.EventHandler(this.pBoxEDT_MouseLeave);
+            this.pBoxEDT.MouseHover += new System.EventHandler(this.pBoxEDT_MouseHover);
+            // 
+            // cmbCli
+            // 
+            this.cmbCli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCli.FormattingEnabled = true;
+            this.cmbCli.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cmbCli.Location = new System.Drawing.Point(272, 329);
+            this.cmbCli.Name = "cmbCli";
+            this.cmbCli.Size = new System.Drawing.Size(268, 31);
+            this.cmbCli.TabIndex = 87;
+            this.cmbCli.MouseEnter += new System.EventHandler(this.cmbCli_MouseEnter);
+            this.cmbCli.MouseLeave += new System.EventHandler(this.cmbCli_MouseLeave);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(12, 329);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 23);
+            this.label4.TabIndex = 86;
+            this.label4.Text = "Cliente:";
+            // 
+            // cmbEDT
+            // 
+            this.cmbEDT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbEDT.FormattingEnabled = true;
+            this.cmbEDT.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cmbEDT.Location = new System.Drawing.Point(272, 292);
+            this.cmbEDT.Name = "cmbEDT";
+            this.cmbEDT.Size = new System.Drawing.Size(265, 31);
+            this.cmbEDT.TabIndex = 85;
+            this.cmbEDT.MouseEnter += new System.EventHandler(this.cmbEDT_MouseEnter);
+            this.cmbEDT.MouseLeave += new System.EventHandler(this.cmbEDT_MouseLeave);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 292);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Equipo de Trabajo:";
+            // 
+            // dateTPHI
+            // 
+            this.dateTPHI.CustomFormat = "HH:mm ";
+            this.dateTPHI.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTPHI.Location = new System.Drawing.Point(172, 178);
+            this.dateTPHI.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
+            this.dateTPHI.Name = "dateTPHI";
+            this.dateTPHI.ShowUpDown = true;
+            this.dateTPHI.Size = new System.Drawing.Size(119, 30);
+            this.dateTPHI.TabIndex = 83;
+            this.dateTPHI.Value = new System.DateTime(2019, 1, 1, 6, 0, 0, 0);
+            this.dateTPHI.MouseEnter += new System.EventHandler(this.dateTPHI_MouseEnter);
+            this.dateTPHI.MouseLeave += new System.EventHandler(this.dateTPHI_MouseLeave);
+            // 
+            // cmbCoor
+            // 
+            this.cmbCoor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCoor.FormattingEnabled = true;
+            this.cmbCoor.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.cmbCoor.Location = new System.Drawing.Point(272, 255);
+            this.cmbCoor.Name = "cmbCoor";
+            this.cmbCoor.Size = new System.Drawing.Size(265, 31);
+            this.cmbCoor.TabIndex = 82;
+            this.cmbCoor.MouseEnter += new System.EventHandler(this.comboBox3_MouseEnter);
+            this.cmbCoor.MouseLeave += new System.EventHandler(this.comboBox3_MouseLeave);
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(120, 138);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(419, 30);
+            this.txtAddress.TabIndex = 79;
+            this.txtAddress.MouseEnter += new System.EventHandler(this.textBox2_MouseEnter);
+            this.txtAddress.MouseLeave += new System.EventHandler(this.txtAddress_MouseLeave);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(9, 255);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(97, 23);
+            this.label11.TabIndex = 78;
+            this.label11.Text = "Coordinador:";
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Items.AddRange(new object[] {
+            "Boda",
+            "Bautizo",
+            "Confirmación",
+            "Primera Comunión",
+            "Graduación",
+            "Otros"});
+            this.cmbTipo.Location = new System.Drawing.Point(121, 62);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(178, 31);
+            this.cmbTipo.TabIndex = 76;
+            this.cmbTipo.MouseEnter += new System.EventHandler(this.comboBox5_MouseEnter);
+            this.cmbTipo.MouseLeave += new System.EventHandler(this.comboBox5_MouseLeave);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(6, 65);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 23);
+            this.label10.TabIndex = 75;
+            this.label10.Text = "Tipo:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(279, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(277, 47);
+            this.label8.TabIndex = 71;
+            this.label8.Text = "Registro de Evento";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // toolT2
+            // 
+            this.toolT2.ToolTipTitle = "Error, Ingrese un valor númerico";
+            // 
+            // dTPHDF2
+            // 
+            this.dTPHDF2.CustomFormat = "HH:mm";
+            this.dTPHDF2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dTPHDF2.Location = new System.Drawing.Point(172, 211);
+            this.dTPHDF2.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
+            this.dTPHDF2.Name = "dTPHDF2";
+            this.dTPHDF2.ShowUpDown = true;
+            this.dTPHDF2.Size = new System.Drawing.Size(116, 30);
+            this.dTPHDF2.TabIndex = 100;
+            this.dTPHDF2.Value = new System.DateTime(2019, 1, 1, 7, 0, 0, 0);
             // 
             // CrearEvento
             // 
@@ -413,27 +545,24 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(790, 441);
+            this.ClientSize = new System.Drawing.Size(824, 495);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pBoxReturn);
+            this.Controls.Add(this.pBoxLimpiar);
+            this.Controls.Add(this.pBoxSave);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CrearEvento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CrearCurso";
-            this.Load += new System.EventHandler(this.CrearCita_Load);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CrearCurso_MouseMove);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxLimpiar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxSave)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxEDT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -442,31 +571,40 @@
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dTPDate;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pBoxReturn;
+        private System.Windows.Forms.PictureBox pBoxLimpiar;
+        private System.Windows.Forms.PictureBox pBoxSave;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cmbTipo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolTip toolTip1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbEDT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DateTimePicker dateTPHI;
+        private System.Windows.Forms.ComboBox cmbCoor;
+        private System.Windows.Forms.PictureBox pBoxClient;
+        private System.Windows.Forms.PictureBox pBoxEDT;
+        private System.Windows.Forms.ComboBox cmbCli;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodeEvent;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ToolTip toolT2;
+        private System.Windows.Forms.Label lblcode;
+        private System.Windows.Forms.Label lblAddresss;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblHI;
+        private System.Windows.Forms.Label lblHF;
+        private System.Windows.Forms.Label lblClient;
+        private System.Windows.Forms.Label lblEDTrabajo;
+        private System.Windows.Forms.Label lblCoord;
+        private System.Windows.Forms.DateTimePicker dTPHDF2;
     }
 }

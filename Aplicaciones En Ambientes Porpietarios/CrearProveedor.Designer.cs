@@ -57,9 +57,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(270, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(294, 47);
+            this.label8.Size = new System.Drawing.Size(308, 47);
             this.label8.TabIndex = 76;
-            this.label8.Text = "Registrar Proveedor";
+            this.label8.Text = "Registo de Proveedor";
             // 
             // pictureBox1
             // 
@@ -71,6 +71,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 81;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 

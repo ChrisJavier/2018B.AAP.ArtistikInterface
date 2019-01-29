@@ -30,26 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuscarEventos));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTipoB = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pBoxReturn = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.pBoxLimpiar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxLimpiar)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(165, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(355, 30);
-            this.textBox1.TabIndex = 0;
+            this.txtSearch.Location = new System.Drawing.Point(205, 67);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(315, 30);
+            this.txtSearch.TabIndex = 0;
+            this.txtSearch.MouseEnter += new System.EventHandler(this.txtSearch_MouseEnter);
+            this.txtSearch.MouseLeave += new System.EventHandler(this.txtSearch_MouseLeave);
             // 
             // pictureBox5
             // 
@@ -69,9 +75,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblSearch);
+            this.groupBox1.Controls.Add(this.lblTipo);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.cmbTipoB);
+            this.groupBox1.Controls.Add(this.txtSearch);
             this.groupBox1.Controls.Add(this.pictureBox5);
             this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(35, 25);
@@ -79,7 +87,7 @@
             this.groupBox1.Size = new System.Drawing.Size(581, 114);
             this.groupBox1.TabIndex = 74;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar Evento";
+            this.groupBox1.Text = "Consulta de Evento";
             // 
             // label1
             // 
@@ -90,11 +98,11 @@
             this.label1.TabIndex = 75;
             this.label1.Text = "Buscar por:";
             // 
-            // comboBox1
+            // cmbTipoB
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbTipoB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoB.FormattingEnabled = true;
+            this.cmbTipoB.Items.AddRange(new object[] {
             "Código",
             "Tipo",
             "Hora de Inicio",
@@ -102,10 +110,12 @@
             "Coordinador",
             "Equipo de Trabajo",
             "Cliente"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 66);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 31);
-            this.comboBox1.TabIndex = 74;
+            this.cmbTipoB.Location = new System.Drawing.Point(6, 66);
+            this.cmbTipoB.Name = "cmbTipoB";
+            this.cmbTipoB.Size = new System.Drawing.Size(166, 31);
+            this.cmbTipoB.TabIndex = 74;
+            this.cmbTipoB.MouseEnter += new System.EventHandler(this.cmbTipoB_MouseEnter);
+            this.cmbTipoB.MouseLeave += new System.EventHandler(this.cmbTipoB_MouseLeave);
             // 
             // dataGridView1
             // 
@@ -115,20 +125,59 @@
             this.dataGridView1.Size = new System.Drawing.Size(581, 190);
             this.dataGridView1.TabIndex = 75;
             // 
-            // pictureBox4
+            // pBoxReturn
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(632, 25);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(49, 42);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 76;
-            this.pictureBox4.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox4, "Regresar");
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
-            this.pictureBox4.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
+            this.pBoxReturn.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxReturn.Image = ((System.Drawing.Image)(resources.GetObject("pBoxReturn.Image")));
+            this.pBoxReturn.Location = new System.Drawing.Point(632, 25);
+            this.pBoxReturn.Name = "pBoxReturn";
+            this.pBoxReturn.Size = new System.Drawing.Size(49, 42);
+            this.pBoxReturn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxReturn.TabIndex = 76;
+            this.pBoxReturn.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxReturn, "Regresar");
+            this.pBoxReturn.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pBoxReturn.MouseLeave += new System.EventHandler(this.pictureBox4_MouseLeave);
+            this.pBoxReturn.MouseHover += new System.EventHandler(this.pictureBox4_MouseHover);
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.BackColor = System.Drawing.Color.DarkRed;
+            this.lblTipo.ForeColor = System.Drawing.Color.White;
+            this.lblTipo.Location = new System.Drawing.Point(6, 66);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(173, 23);
+            this.lblTipo.TabIndex = 94;
+            this.lblTipo.Text = "Error, Escoja una opción";
+            this.lblTipo.Visible = false;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.BackColor = System.Drawing.Color.DarkRed;
+            this.lblSearch.ForeColor = System.Drawing.Color.White;
+            this.lblSearch.Location = new System.Drawing.Point(358, 67);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(162, 23);
+            this.lblSearch.TabIndex = 96;
+            this.lblSearch.Text = "Error, Ingrese un valor";
+            this.lblSearch.Visible = false;
+            // 
+            // pBoxLimpiar
+            // 
+            this.pBoxLimpiar.BackColor = System.Drawing.Color.Transparent;
+            this.pBoxLimpiar.Image = ((System.Drawing.Image)(resources.GetObject("pBoxLimpiar.Image")));
+            this.pBoxLimpiar.Location = new System.Drawing.Point(632, 73);
+            this.pBoxLimpiar.Name = "pBoxLimpiar";
+            this.pBoxLimpiar.Size = new System.Drawing.Size(49, 49);
+            this.pBoxLimpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBoxLimpiar.TabIndex = 77;
+            this.pBoxLimpiar.TabStop = false;
+            this.toolTip1.SetToolTip(this.pBoxLimpiar, "Limpiar");
+            this.pBoxLimpiar.Click += new System.EventHandler(this.pBoxLimpiar_Click);
+            this.pBoxLimpiar.MouseLeave += new System.EventHandler(this.pBoxLimpiar_MouseLeave);
+            this.pBoxLimpiar.MouseHover += new System.EventHandler(this.pBoxLimpiar_MouseHover);
             // 
             // BuscarEventos
             // 
@@ -137,7 +186,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(693, 402);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pBoxLimpiar);
+            this.Controls.Add(this.pBoxReturn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.DoubleBuffered = true;
@@ -149,20 +199,24 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxLimpiar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pBoxReturn;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbTipoB;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.PictureBox pBoxLimpiar;
     }
 }

@@ -73,9 +73,9 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(27, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(261, 47);
+            this.label8.Size = new System.Drawing.Size(345, 47);
             this.label8.TabIndex = 76;
-            this.label8.Text = "Modificar Usuario";
+            this.label8.Text = "Modificación de Usuario";
             // 
             // groupBox1
             // 

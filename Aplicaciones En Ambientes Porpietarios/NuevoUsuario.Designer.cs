@@ -91,6 +91,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 66;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             this.pictureBox2.MouseLeave += new System.EventHandler(this.pictureBox2_MouseLeave);
             this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
             // 
@@ -114,9 +115,9 @@
             this.label11.Location = new System.Drawing.Point(296, 39);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(276, 51);
+            this.label11.Size = new System.Drawing.Size(306, 51);
             this.label11.TabIndex = 65;
-            this.label11.Text = "Registrar Usuario";
+            this.label11.Text = "Registro de Usuario";
             // 
             // groupBox1
             // 

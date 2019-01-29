@@ -39,7 +39,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
                     string tipo = (bd.selectstring("select PERMISO FROM LOGIN WHERE USUARIO ='" + txtUsuario.Text + "'"));
                     if (txtPassword.Text.Trim() == contraseña.Trim())
                     {*/
-                        MessageBox.Show("Bienvenidos al Sistema SISEM");
+                        MessageBox.Show("Bienvenidos al Sistema Artik-Soft");
                         //tipoAdmin = tipo;
                         //menu.txtTipoUsuario.Text = tipoAdmin;
                         menu.Show();

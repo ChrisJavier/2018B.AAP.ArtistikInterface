@@ -298,7 +298,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.AutoScroll = true;
             panel1.Controls.Clear();
             //panel1.Size = new Size(800, 800);
-            panel1.Location = new Point(0, 100);
+            panel1.Location = new Point(0, 150);
             panel1.Controls.Add(FormEE);
             FormEE.Dock = DockStyle.Left;
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -409,8 +409,8 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.TopLevel = false;
             FormEE.AutoScroll = true;
             panel1.Controls.Clear();
-            //panel1.Size = new Size(800, 800);
-            //panel1.Location = new Point(50, 100);
+            panel1.Size = new Size(800, 800);
+            panel1.Location = new Point(50, 100);
             panel1.Controls.Add(FormEE);
             FormEE.Dock = DockStyle.Left;
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -423,8 +423,8 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.TopLevel = false;
             FormEE.AutoScroll = true;
             panel1.Controls.Clear();
-            //panel1.Size = new Size(800, 800);
-            //panel1.Location = new Point(50, 100);
+            panel1.Size = new Size(800, 800);
+            panel1.Location = new Point(50, 100);
             panel1.Controls.Add(FormEE);
             FormEE.Dock = DockStyle.Left;
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

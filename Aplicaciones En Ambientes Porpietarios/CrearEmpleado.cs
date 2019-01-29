@@ -36,5 +36,16 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+            this.Hide();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

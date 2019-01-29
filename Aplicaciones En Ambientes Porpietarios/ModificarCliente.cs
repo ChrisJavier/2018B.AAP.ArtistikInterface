@@ -72,13 +72,14 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             panel1.Visible = false;
+            this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panel1.BringToFront();
-            panel1.Location = new Point(80, 120);
+           // panel1.Visible = true;
+            //panel1.BringToFront();
+            //panel1.Location = new Point(80, 120);
             //dataGridView1.DataSource = bd.SelectDataTable("exec dbo.BuscarPersonaEstudiante");
         }
 

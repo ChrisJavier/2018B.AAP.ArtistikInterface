@@ -33,8 +33,8 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            panel1.Visible = true;
-            panel1.Location = new Point(199, 155);
+            //panel1.Visible = true;
+            //panel1.Location = new Point(199, 155);
             /*if (radioButton1.Checked==true&& radioButton2.Checked == false)
             {
                 dataGridView2.DataSource = bd.SelectDataTable("select CI,RUC,NOMBRE,APELLIDO,DIRECCION,TELEFONO from PERSONA where CI='" + txtIdentificacion.Text + "'");
@@ -272,7 +272,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             string cantidad = "1";
             string descricion = dgv.Cells[0].Value.ToString();
             string precio = dgv.Cells[1].Value.ToString();
-            dataGridView1.Rows.Add(cantidad,descricion,precio);
+            //dataGridView1.Rows.Add(cantidad,descricion,precio);
             double subTotal = suma();
             double iv = iva(subTotal);
             double tot = total(iv, subTotal);
@@ -322,16 +322,16 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             const int columna = 2;
 
             double suma = 0;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                suma += Double.Parse (row.Cells[columna].Value.ToString());
-            }
+           // foreach (DataGridViewRow row in dataGridView1.Rows)
+            //{
+             //   suma += Double.Parse (row.Cells[columna].Value.ToString());
+            //}
             return suma;
         }
 
         private void pictureBox16_Click(object sender, EventArgs e)
         {
-            string pago = textBox8.Text;
+            /*string pago = textBox8.Text;
             string[] sueldo = pago.Split(',');
             string salario = sueldo[0] + "." + sueldo[1];
             string ingresarFactura = "";
@@ -408,7 +408,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             else
             {
                 MessageBox.Show("Error al agregar");
-            }
+            }*/
         }
 
         private void pictureBox3_MouseLeave(object sender, EventArgs e)

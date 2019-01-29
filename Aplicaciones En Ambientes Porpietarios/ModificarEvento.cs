@@ -427,5 +427,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
 
         }
+
+        private void pictureBox5_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
