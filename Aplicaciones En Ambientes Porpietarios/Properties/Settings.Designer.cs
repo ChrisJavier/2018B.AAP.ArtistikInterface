@@ -53,5 +53,15 @@ namespace Aplicaciones_En_Ambientes_Porpietarios.Properties {
                 return ((string)(this["AAP_2018ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=USER-PC\\CHRISERVER;Initial Catalog=AAP_2018;Integrated Security=True")]
+        public string AAP_2018ConnectionString1 {
+            get {
+                return ((string)(this["AAP_2018ConnectionString1"]));
+            }
+        }
     }
 }

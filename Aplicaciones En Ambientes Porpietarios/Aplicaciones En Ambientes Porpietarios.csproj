@@ -117,11 +117,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AAP_2018DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AAP_2018DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="AnularFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +135,7 @@
     <Compile Include="BuscarUsuario.Designer.cs">
       <DependentUpon>BuscarUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conexion.cs" />
     <Compile Include="ConsultarFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -573,17 +569,6 @@
     </None>
     <None Include="AAP_2018DataSet.xss">
       <DependentUpon>AAP_2018DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="AAP_2018DataSet1.xsc">
-      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="AAP_2018DataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AAP_2018DataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AAP_2018DataSet1.xss">
-      <DependentUpon>AAP_2018DataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

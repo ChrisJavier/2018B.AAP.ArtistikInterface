@@ -14,15 +14,20 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
     public partial class CrearEvento : Form
     {
         BaseDeDatos bd = new BaseDeDatos();
+        conexion con = new conexion();
         ValidarSoloLetrasSoloNumeros validar = new ValidarSoloLetrasSoloNumeros();
         public CrearEvento()
         {
             InitializeComponent();
-            
-            //cargarComboBox();
+
+            con.conectar();
+            //con.Insert("insert into EVENTO values(1, 1, '12345678', 'Boda', '30/01/2019', 'Calle h', '07:00', '10:00')");
             dTPDate.Value = System.DateTime.Today;
             dTPDate.MinDate = System.DateTime.Today;
+            cmbEDT.SelectedIndex = -1;
+           
             
+
         }
 
 
@@ -83,18 +88,26 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Está seguro de guardar ? ", "Guardar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de guardar ? ", "Guardar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                //guardar();
-                MessageBox.Show("El evento se ha guardado exitosamente");
+                    if (ComprobarCampos() == 0)
+                    {
+                        con.Insert("insert into EVENTO values (" + cmbCli.SelectedValue + "," + cmbEDT.SelectedValue + ",'" + txtCodeEvent.Text + "','" + cmbTipo.SelectedItem + "','" + dTPDate.Value.ToString("dd/MM/yyy") + "','" + txtAddress.Text + "','" + dateTPHI.Value.ToString("HH:mm") + "','" + dTPHDF2.Value.ToString("HH:mm") + "')");
+                        MessageBox.Show("El evento se ha guardado exitosamente");
+                        Limpiar();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error, no se ha guardado\nRevise los campos señalados");
+                    }
+                
             }
-            
                 
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Está seguro de limpiar la ventana ? ", "Limpiar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro de limpiar la ventana?\nSe perderá todo el avance", "Limpiar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 Limpiar();
                 MessageBox.Show("La ventana se ha limpiado exitosamente");
@@ -130,73 +143,12 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
             pBoxClient.Size = new Size(46, 47);
         }
-        private void guardar()
-        {
-            consultar();
-        }
-        private void consultar()
-        {
-           // string nombreCurso = bd.selectstring("EXEC DBO.cursoNombreNivel @nombre='" + textBox1.Text + "'");
-            //string nivelCurso = bd.selectstring("EXEC DBO.cursoNivel @nivel='" + /*comboBox4.Text*/ + "'");
-            
-            //string[] profesor = nombres.Split(' ');
-            //string nombreP = profesor[0];
-            //string apellidoP = profesor[1];
-            //string consultarProfesor = bd.selectstring("select INSTRUCTOR.CONINS from PERSONA inner join INSTRUCTOR on PERSONA.CODPERSONA = INSTRUCTOR.CODPERSONA WHERE APELLIDO='"+apellidoP+"'AND NOMBRE='"+nombreP+"'");
-            //int codProfesor = Int32.Parse(consultarProfesor);
-            //int cupo = Convert.ToInt32(numericUpDown1.Value);
-            /*string registrarCurso = "EXEC dbo.IngresarCurso "+
-                "@CONINS = "+codProfesor+
-                ",@NOMBRE = '"+textBox1.Text+
-                "',@NIVEL = '"+comboBox4.Text+
-                "',@TIPO = '"+comboBox5.Text+
-                "',@CUPO = "+cupo+
-                ",@FECHAINICIO = '"+dateTimePicker1.Text+
-                "',@FECHAFIN = '"+dateTimePicker2.Text+
-                "',@SILABO = '"+textBox2.Text+
-                "',@DIA = '"+comboBox1.Text+
-                "',@HORA = '"+comboBox2.Text+
-                "',@COSTO ="+textBox3.Text+"";
-            if (textBox1.Text.Equals("")||textBox2.Text.Equals("")|| textBox3.Text.Equals("") || comboBox1.Text.Equals("") ||comboBox2.Text.Equals("")|| comboBox3.Text.Equals("")|| comboBox4.Text.Equals("")||comboBox5.Text.Equals("")||dateTimePicker1.Text.Equals("")||dateTimePicker2.Text.Equals(""))
-            {
-                MessageBox.Show("Error uno o mas campos vacios");
-            }
-            else
-            {
-                if (nombreCurso == textBox1.Text && nivelCurso==comboBox4.Text)
-                {
-                    MessageBox.Show("Datos ya registrados");
-                }
-                else
-                {
-                    MessageBox.Show(registrarCurso);
-                    if (bd.executecommand(registrarCurso))
-                    {
-                        MessageBox.Show("Registrado");
-                        textBox1.Text = "";
-                        textBox2.Text = "";
-                        textBox3.Text = "";
-                        comboBox1.SelectedIndex=-1;
-                        comboBox2.SelectedIndex = -1;
-                        comboBox3.SelectedIndex = -1;
-                        comboBox4.SelectedIndex = -1;
-                        comboBox5.SelectedIndex = -1;
-                        dateTimePicker1.Value = System.DateTime.Today;
-                        dateTimePicker2.Value = System.DateTime.Today;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error al agregar");
-                    }
-                }
-            }*/
-        }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             DateTime dateTime = new DateTime();
             dateTime = dTPDate.Value;
-           // dTPHDF2.MinDate = dateTime;
+           
         }
 
         private void txtCodeEvent_MouseEnter(object sender, EventArgs e)
@@ -239,11 +191,8 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void dateTPHI_MouseLeave(object sender, EventArgs e)
         {
-            
-            if (Convert.ToInt32(dateTPHI.Value.ToString("HH"))<6 || int.Parse(dateTPHI.Value.ToString("HH")) > 20)
-            {
-                lblHI.Visible = true;
-            }
+
+            ComprobarHora(2);
         }
 
         private void dTPHF_MouseEnter(object sender, EventArgs e)
@@ -254,14 +203,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void dTPHF_MouseLeave(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(dTPHDF2.Value.ToString("HH")) < 7 || int.Parse(dTPHDF2.Value.ToString("HH")) > 0)
-            {
-                lblHF.Visible = true;
-            }
-            if (Convert.ToInt32(dateTPHI.Value.ToString("HH")) < 6 || int.Parse(dateTPHI.Value.ToString("HH")) > 20)
-            {
-                lblHI.Visible = true;
-            }
+            ComprobarHora(1);
         }
 
 
@@ -272,7 +214,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void cmbEDT_MouseLeave(object sender, EventArgs e)
         {
-            if (ComprobarCombos(3)==1)
+            if (ComprobarCombos(3)==3)
             {
                 lblEDTrabajo.Visible = true;
             }
@@ -285,7 +227,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
         private void cmbCli_MouseLeave(object sender, EventArgs e)
         {
-            if (ComprobarCombos(4) == 1)
+            if (ComprobarCombos(5) == 5)
             {
                 lblClient.Visible = true;
             }
@@ -340,6 +282,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
                     {
                         lblcode.Text = "Error, Ingrese el código del evento";
                         lblcode.Visible = true;
+                        return 1;
 
                     }
                     else if (txtCodeEvent.Text.Length > 8)
@@ -348,19 +291,25 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
                         lblcode.Visible = true;
                         return 1;
                     }
-                    break;
+                    else if (verificarCod(txtCodeEvent.Text))
+                    {
+                        lblcode.Text = ("Error, El código ya existe");
+                        lblcode.Visible = true;
+                        return 1;
+                    }
+                        break;
                 case 2:
                     if (txtAddress.Text.Equals(""))
                     {
                         lblAddresss.Text = "Error, Ingrese una dirección valida";
                         lblAddresss.Visible = true;
-
+                        return 2;
                     }
                     else if (txtAddress.Text.Length > 10)
                     {
                         lblAddresss.Text = "Error, La dirección debe tener al menos 10 caracteres";
                         lblAddresss.Visible = true;
-                        return 1;
+                        return 2;
                     }
                     break;
             }
@@ -370,6 +319,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         }
         public int ComprobarCombos(int valor)
         {
+            
             switch (valor){
                 case 1:
                     if (cmbTipo.SelectedIndex.Equals(-1))
@@ -377,29 +327,139 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
                     break;
                 case 3:
                     if (cmbEDT.SelectedIndex.Equals(-1))
-                        return 1;
+                        return 3;
                     break;
-                case 4:
+                case 5:
                     if (cmbCli.SelectedIndex.Equals(-1))
-                        return 1;
+                        return 5;
                     break;
             }
           
             return 0;
         }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
+        public int ComprobarHora(int valor)
         {
+            String horaI = dateTPHI.Value.ToString("HH");
+            String horaF = dTPHDF2.Value.ToString("HH");
+            int suma = 0;
+            switch (valor)
+            {
+                case 1:
+                    if (Convert.ToInt32(horaF) < 7 || int.Parse(horaF) > 23)
+                    {
+                        lblHF.Visible = true;
+                        suma += 1;
+                    }
+                    break;
+                    case 2:
+                    if (Convert.ToInt32(horaI) < 6 || int.Parse(horaI) > 20)
+                    {
+                        lblHI.Visible = true;
+                        suma += 2;
+                    }
+                    break;
 
+            }
+            
+            
+            return suma;
         }
+
 
         private void CrearEvento_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'aAP_2018DataSet1.GRUPO' Puede moverla o quitarla según sea necesario.
-            AAP_2018DataSet1TableAdapters.GRUPOTableAdapter gRUPOTableAdapter1 = this.gRUPOTableAdapter;
-            gRUPOTableAdapter1.Fill(aAP_2018DataSet1.GRUPO);
-           
+            // TODO: esta línea de código carga datos en la tabla 'aAP_2018DataSet.GRUPO' Puede moverla o quitarla según sea necesario.
+            this.gRUPOTableAdapter.Fill(this.aAP_2018DataSet.GRUPO);
+            // TODO: esta línea de código carga datos en la tabla 'aAP_2018DataSet.NombresCliente' Puede moverla o quitarla según sea necesario.
+            this.nombresClienteTableAdapter.Fill(this.aAP_2018DataSet.NombresCliente);
+            // TODO: esta línea de código carga datos en la tabla 'aAP_2018DataSet.NombresCliente' Puede moverla o quitarla según sea necesario.
+            this.nombresClienteTableAdapter.Fill(this.aAP_2018DataSet.NombresCliente);
+            cmbEDT.SelectedIndex =-1;
+            cmbCli.SelectedIndex = -1;
 
+        }
+        public int ComprobarCampos()
+        {
+            int totalError = 0;
+            int sumaText = (ComprobarTextBox(1) + ComprobarTextBox(2));
+            switch (sumaText)
+            {
+                case 1:
+                    lblcode.Visible = true;
+                    totalError += 1;
+                    break;
+                case 2:
+                    lblAddresss.Visible = true;
+                    totalError += 2;
+                    break;
+                case 3:
+                    lblcode.Visible = true;
+                    lblAddresss.Visible = true;
+                    totalError += 2;
+                    break;
+            }
+
+            int sumaBox = (ComprobarCombos(1) + ComprobarCombos(3) + ComprobarCombos(5));
+            switch (sumaBox)
+            {
+                case 1:
+                    lblTipo.Visible = true;
+                    totalError += 1;
+                    break;
+                case 3:
+                    lblEDTrabajo.Visible = true;
+                    totalError += 3;
+                    break;
+                case 4:
+                    lblTipo.Visible = true;
+                    lblEDTrabajo.Visible = true;
+                    totalError += 4;
+                    break;
+                case 5:
+                    lblClient.Visible = true;
+                    totalError += 5;
+                    break;
+                case 6:
+                    lblTipo.Visible = true;
+                    lblClient.Visible = true;
+                    totalError += 6;
+                    break;
+                case 8:
+                    lblEDTrabajo.Visible = true;
+                    lblClient.Visible = true;
+                    totalError += 8;
+                    break;
+                case 9:
+                    lblTipo.Visible = true;
+                    lblEDTrabajo.Visible = true;
+                    lblClient.Visible = true;
+                    totalError += 9;
+                    break;
+
+
+            }
+            return sumaBox + sumaText+ ComprobarHora(1)+ ComprobarHora(2);
+        }
+
+        private void dTPHDF2_MouseEnter(object sender, EventArgs e)
+        {
+            lblHF.Visible = false;
+        }
+
+        private void dTPHDF2_MouseLeave(object sender, EventArgs e)
+        {
+            ComprobarHora(1);
+        }
+        private Boolean verificarCod(String valor)
+        {
+            String[] a = new String[Convert.ToInt32(con.Consultar1("select count(*) as total from EVENTO",1))];
+            a = con.Consultar2("select CODIGOEVENTO from EVENTO",a.Length);
+            for (int i = 0; i < a.Length; i++)
+                if (a[i].Replace(" ","").Equals(valor))
+                {
+                    return true;
+                }
+            return false;
         }
     }
 }

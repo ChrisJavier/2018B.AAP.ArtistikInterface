@@ -62,8 +62,11 @@
             this.pBoxClient = new System.Windows.Forms.PictureBox();
             this.pBoxEDT = new System.Windows.Forms.PictureBox();
             this.cmbCli = new System.Windows.Forms.ComboBox();
+            this.nombresClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aAP_2018DataSet = new Aplicaciones_En_Ambientes_Porpietarios.AAP_2018DataSet();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbEDT = new System.Windows.Forms.ComboBox();
+            this.gRUPOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.dateTPHI = new System.Windows.Forms.DateTimePicker();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -73,16 +76,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.aAP_2018DataSet1 = new Aplicaciones_En_Ambientes_Porpietarios.AAP_2018DataSet1();
-            this.gRUPOBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gRUPOTableAdapter = new Aplicaciones_En_Ambientes_Porpietarios.AAP_2018DataSet1TableAdapters.GRUPOTableAdapter();
+            this.nombresClienteTableAdapter = new Aplicaciones_En_Ambientes_Porpietarios.AAP_2018DataSetTableAdapters.NombresClienteTableAdapter();
+            this.gRUPOTableAdapter = new Aplicaciones_En_Ambientes_Porpietarios.AAP_2018DataSetTableAdapters.GRUPOTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxLimpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxSave)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxClient)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxEDT)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aAP_2018DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nombresClienteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aAP_2018DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gRUPOBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,7 +225,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
             this.groupBox2.UseCompatibleTextRendering = true;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // lblClient
             // 
@@ -257,7 +259,7 @@
             this.lblHF.Name = "lblHF";
             this.lblHF.Size = new System.Drawing.Size(369, 23);
             this.lblHF.TabIndex = 97;
-            this.lblHF.Text = "Error, Ingrese una hora entre las 7 hasta las 00 horas";
+            this.lblHF.Text = "Error, Ingrese una hora entre las 7 hasta las 23 horas";
             this.lblHF.Visible = false;
             // 
             // lblHI
@@ -351,6 +353,7 @@
             this.pBoxClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxClient.TabIndex = 89;
             this.pBoxClient.TabStop = false;
+            this.pBoxClient.Visible = false;
             this.pBoxClient.MouseLeave += new System.EventHandler(this.pBoxClient_MouseLeave);
             this.pBoxClient.MouseHover += new System.EventHandler(this.pictureBox6_MouseHover_1);
             // 
@@ -364,11 +367,14 @@
             this.pBoxEDT.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pBoxEDT.TabIndex = 88;
             this.pBoxEDT.TabStop = false;
+            this.pBoxEDT.Visible = false;
             this.pBoxEDT.MouseLeave += new System.EventHandler(this.pBoxEDT_MouseLeave);
             this.pBoxEDT.MouseHover += new System.EventHandler(this.pBoxEDT_MouseHover);
             // 
             // cmbCli
             // 
+            this.cmbCli.DataSource = this.nombresClienteBindingSource;
+            this.cmbCli.DisplayMember = "NOMBRES";
             this.cmbCli.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCli.FormattingEnabled = true;
             this.cmbCli.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -376,8 +382,19 @@
             this.cmbCli.Name = "cmbCli";
             this.cmbCli.Size = new System.Drawing.Size(268, 31);
             this.cmbCli.TabIndex = 87;
+            this.cmbCli.ValueMember = "IDCLIENTE";
             this.cmbCli.MouseEnter += new System.EventHandler(this.cmbCli_MouseEnter);
             this.cmbCli.MouseLeave += new System.EventHandler(this.cmbCli_MouseLeave);
+            // 
+            // nombresClienteBindingSource
+            // 
+            this.nombresClienteBindingSource.DataMember = "NombresCliente";
+            this.nombresClienteBindingSource.DataSource = this.aAP_2018DataSet;
+            // 
+            // aAP_2018DataSet
+            // 
+            this.aAP_2018DataSet.DataSetName = "AAP_2018DataSet";
+            this.aAP_2018DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label4
             // 
@@ -401,9 +418,14 @@
             this.cmbEDT.Name = "cmbEDT";
             this.cmbEDT.Size = new System.Drawing.Size(265, 31);
             this.cmbEDT.TabIndex = 85;
-            this.cmbEDT.ValueMember = "COORDINADORG";
+            this.cmbEDT.ValueMember = "IDGRUPO";
             this.cmbEDT.MouseEnter += new System.EventHandler(this.cmbEDT_MouseEnter);
             this.cmbEDT.MouseLeave += new System.EventHandler(this.cmbEDT_MouseLeave);
+            // 
+            // gRUPOBindingSource
+            // 
+            this.gRUPOBindingSource.DataMember = "GRUPO";
+            this.gRUPOBindingSource.DataSource = this.aAP_2018DataSet;
             // 
             // label1
             // 
@@ -447,8 +469,8 @@
             "Boda",
             "Bautizo",
             "Confirmación",
-            "Primera Comunión",
             "Graduación",
+            "Primera Comunión",
             "Otros"});
             this.cmbTipo.Location = new System.Drawing.Point(121, 62);
             this.cmbTipo.Name = "cmbTipo";
@@ -470,7 +492,7 @@
             // 
             // dTPHDF2
             // 
-            this.dTPHDF2.CustomFormat = "HH:mm";
+            this.dTPHDF2.CustomFormat = "HH:mm tt";
             this.dTPHDF2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dTPHDF2.Location = new System.Drawing.Point(172, 211);
             this.dTPHDF2.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
@@ -479,6 +501,8 @@
             this.dTPHDF2.Size = new System.Drawing.Size(116, 30);
             this.dTPHDF2.TabIndex = 100;
             this.dTPHDF2.Value = new System.DateTime(2019, 1, 1, 7, 0, 0, 0);
+            this.dTPHDF2.MouseEnter += new System.EventHandler(this.dTPHDF2_MouseEnter);
+            this.dTPHDF2.MouseLeave += new System.EventHandler(this.dTPHDF2_MouseLeave);
             // 
             // label8
             // 
@@ -496,15 +520,9 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // aAP_2018DataSet1
+            // nombresClienteTableAdapter
             // 
-            this.aAP_2018DataSet1.DataSetName = "AAP_2018DataSet1";
-            this.aAP_2018DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // gRUPOBindingSource
-            // 
-            this.gRUPOBindingSource.DataMember = "GRUPO";
-            this.gRUPOBindingSource.DataSource = this.aAP_2018DataSet1;
+            this.nombresClienteTableAdapter.ClearBeforeFill = true;
             // 
             // gRUPOTableAdapter
             // 
@@ -536,7 +554,8 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxClient)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxEDT)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aAP_2018DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nombresClienteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aAP_2018DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gRUPOBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -577,8 +596,10 @@
         private System.Windows.Forms.Label lblEDTrabajo;
         private System.Windows.Forms.DateTimePicker dTPHDF2;
         private System.Windows.Forms.ToolTip toolTip1;
-        private AAP_2018DataSet1 aAP_2018DataSet1;
+        private AAP_2018DataSet aAP_2018DataSet;
+        private System.Windows.Forms.BindingSource nombresClienteBindingSource;
+        private AAP_2018DataSetTableAdapters.NombresClienteTableAdapter nombresClienteTableAdapter;
         private System.Windows.Forms.BindingSource gRUPOBindingSource;
-        private AAP_2018DataSet1TableAdapters.GRUPOTableAdapter gRUPOTableAdapter;
+        private AAP_2018DataSetTableAdapters.GRUPOTableAdapter gRUPOTableAdapter;
     }
 }

@@ -14,9 +14,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         [STAThread]
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CrearEvento());
+            Application.Run(new BuscarEventos());
         }
     }
 }

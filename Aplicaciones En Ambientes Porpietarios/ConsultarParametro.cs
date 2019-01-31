@@ -22,5 +22,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
 
             this.Hide();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
