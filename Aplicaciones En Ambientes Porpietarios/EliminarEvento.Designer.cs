@@ -33,12 +33,12 @@
             this.pBoxReturn = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.pBoxSearch = new System.Windows.Forms.PictureBox();
             this.txtValor = new System.Windows.Forms.TextBox();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.lblSearch = new System.Windows.Forms.Label();
             this.pBoxLimpiar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxReturn)).BeginInit();
@@ -92,7 +92,7 @@
             this.groupBox1.Controls.Add(this.cmbTipo);
             this.groupBox1.Controls.Add(this.pBoxSearch);
             this.groupBox1.Controls.Add(this.txtValor);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(23, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(585, 98);
@@ -100,12 +100,38 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eliminación de Evento";
             // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.BackColor = System.Drawing.Color.DarkRed;
+            this.lblSearch.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblSearch.ForeColor = System.Drawing.Color.White;
+            this.lblSearch.Location = new System.Drawing.Point(367, 61);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(165, 16);
+            this.lblSearch.TabIndex = 97;
+            this.lblSearch.Text = "Error, Ingrese un valor";
+            this.lblSearch.Visible = false;
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.BackColor = System.Drawing.Color.DarkRed;
+            this.lblTipo.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblTipo.ForeColor = System.Drawing.Color.White;
+            this.lblTipo.Location = new System.Drawing.Point(14, 61);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(177, 16);
+            this.lblTipo.TabIndex = 95;
+            this.lblTipo.Text = "Error, Escoja una opción";
+            this.lblTipo.Visible = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 23);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 76;
             this.label1.Text = "Buscar por:";
             // 
@@ -117,7 +143,7 @@
             "Código"});
             this.cmbTipo.Location = new System.Drawing.Point(10, 58);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(181, 31);
+            this.cmbTipo.Size = new System.Drawing.Size(181, 24);
             this.cmbTipo.TabIndex = 75;
             this.cmbTipo.MouseEnter += new System.EventHandler(this.cmbTipo_MouseEnter);
             this.cmbTipo.MouseLeave += new System.EventHandler(this.cmbTipo_MouseLeave);
@@ -137,36 +163,13 @@
             // 
             // txtValor
             // 
+            this.txtValor.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.txtValor.Location = new System.Drawing.Point(225, 58);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(307, 30);
+            this.txtValor.Size = new System.Drawing.Size(307, 23);
             this.txtValor.TabIndex = 0;
             this.txtValor.MouseEnter += new System.EventHandler(this.txtValor_MouseEnter);
             this.txtValor.MouseLeave += new System.EventHandler(this.txtValor_MouseLeave);
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.BackColor = System.Drawing.Color.DarkRed;
-            this.lblTipo.ForeColor = System.Drawing.Color.White;
-            this.lblTipo.Location = new System.Drawing.Point(6, 58);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(173, 23);
-            this.lblTipo.TabIndex = 95;
-            this.lblTipo.Text = "Error, Escoja una opción";
-            this.lblTipo.Visible = false;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.BackColor = System.Drawing.Color.DarkRed;
-            this.lblSearch.ForeColor = System.Drawing.Color.White;
-            this.lblSearch.Location = new System.Drawing.Point(370, 58);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(162, 23);
-            this.lblSearch.TabIndex = 97;
-            this.lblSearch.Text = "Error, Ingrese un valor";
-            this.lblSearch.Visible = false;
             // 
             // pBoxLimpiar
             // 

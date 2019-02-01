@@ -92,22 +92,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(6, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 23);
+            this.label2.Size = new System.Drawing.Size(52, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(12, 218);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(151, 23);
+            this.label3.Size = new System.Drawing.Size(154, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Hora de Finalización:";
             // 
@@ -118,7 +118,7 @@
             this.dTPDate.Location = new System.Drawing.Point(122, 99);
             this.dTPDate.MinDate = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dTPDate.Name = "dTPDate";
-            this.dTPDate.Size = new System.Drawing.Size(137, 30);
+            this.dTPDate.Size = new System.Drawing.Size(137, 23);
             this.dTPDate.TabIndex = 5;
             this.dTPDate.Value = new System.DateTime(2019, 1, 1, 0, 0, 0, 0);
             this.dTPDate.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
@@ -126,22 +126,22 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(9, 145);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 23);
+            this.label7.Size = new System.Drawing.Size(78, 16);
             this.label7.TabIndex = 11;
             this.label7.Text = "Dirección:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(9, 184);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 23);
+            this.label9.Size = new System.Drawing.Size(108, 16);
             this.label9.TabIndex = 17;
             this.label9.Text = "Hora de Inicio:";
             // 
@@ -216,7 +216,7 @@
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.dTPHDF2);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(68, 48);
             this.groupBox2.Name = "groupBox2";
@@ -231,9 +231,9 @@
             this.lblClient.AutoSize = true;
             this.lblClient.BackColor = System.Drawing.Color.DarkRed;
             this.lblClient.ForeColor = System.Drawing.Color.White;
-            this.lblClient.Location = new System.Drawing.Point(366, 310);
+            this.lblClient.Location = new System.Drawing.Point(277, 313);
             this.lblClient.Name = "lblClient";
-            this.lblClient.Size = new System.Drawing.Size(173, 23);
+            this.lblClient.Size = new System.Drawing.Size(177, 16);
             this.lblClient.TabIndex = 94;
             this.lblClient.Text = "Error, Escoja una opción";
             this.lblClient.Visible = false;
@@ -243,9 +243,9 @@
             this.lblEDTrabajo.AutoSize = true;
             this.lblEDTrabajo.BackColor = System.Drawing.Color.DarkRed;
             this.lblEDTrabajo.ForeColor = System.Drawing.Color.White;
-            this.lblEDTrabajo.Location = new System.Drawing.Point(364, 265);
+            this.lblEDTrabajo.Location = new System.Drawing.Point(277, 266);
             this.lblEDTrabajo.Name = "lblEDTrabajo";
-            this.lblEDTrabajo.Size = new System.Drawing.Size(173, 23);
+            this.lblEDTrabajo.Size = new System.Drawing.Size(177, 16);
             this.lblEDTrabajo.TabIndex = 99;
             this.lblEDTrabajo.Text = "Error, Escoja una opción";
             this.lblEDTrabajo.Visible = false;
@@ -255,9 +255,9 @@
             this.lblHF.AutoSize = true;
             this.lblHF.BackColor = System.Drawing.Color.DarkRed;
             this.lblHF.ForeColor = System.Drawing.Color.White;
-            this.lblHF.Location = new System.Drawing.Point(288, 212);
+            this.lblHF.Location = new System.Drawing.Point(292, 215);
             this.lblHF.Name = "lblHF";
-            this.lblHF.Size = new System.Drawing.Size(369, 23);
+            this.lblHF.Size = new System.Drawing.Size(371, 16);
             this.lblHF.TabIndex = 97;
             this.lblHF.Text = "Error, Ingrese una hora entre las 7 hasta las 23 horas";
             this.lblHF.Visible = false;
@@ -267,9 +267,9 @@
             this.lblHI.AutoSize = true;
             this.lblHI.BackColor = System.Drawing.Color.DarkRed;
             this.lblHI.ForeColor = System.Drawing.Color.White;
-            this.lblHI.Location = new System.Drawing.Point(291, 178);
+            this.lblHI.Location = new System.Drawing.Point(295, 182);
             this.lblHI.Name = "lblHI";
-            this.lblHI.Size = new System.Drawing.Size(369, 23);
+            this.lblHI.Size = new System.Drawing.Size(371, 16);
             this.lblHI.TabIndex = 96;
             this.lblHI.Text = "Error, Ingrese una hora entre las 6 hasta las 20 horas";
             this.lblHI.Visible = false;
@@ -279,9 +279,9 @@
             this.lblAddresss.AutoSize = true;
             this.lblAddresss.BackColor = System.Drawing.Color.DarkRed;
             this.lblAddresss.ForeColor = System.Drawing.Color.White;
-            this.lblAddresss.Location = new System.Drawing.Point(342, 138);
+            this.lblAddresss.Location = new System.Drawing.Point(421, 141);
             this.lblAddresss.Name = "lblAddresss";
-            this.lblAddresss.Size = new System.Drawing.Size(243, 23);
+            this.lblAddresss.Size = new System.Drawing.Size(246, 16);
             this.lblAddresss.TabIndex = 95;
             this.lblAddresss.Text = "Error, Ingrese una dirección valida";
             this.lblAddresss.Visible = false;
@@ -291,9 +291,9 @@
             this.lblDate.AutoSize = true;
             this.lblDate.BackColor = System.Drawing.Color.DarkRed;
             this.lblDate.ForeColor = System.Drawing.Color.White;
-            this.lblDate.Location = new System.Drawing.Point(261, 99);
+            this.lblDate.Location = new System.Drawing.Point(265, 101);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(305, 23);
+            this.lblDate.Size = new System.Drawing.Size(311, 16);
             this.lblDate.TabIndex = 94;
             this.lblDate.Text = "Error, Escoja una fecha posterior a la actual";
             this.lblDate.Visible = false;
@@ -303,9 +303,9 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.BackColor = System.Drawing.Color.DarkRed;
             this.lblTipo.ForeColor = System.Drawing.Color.White;
-            this.lblTipo.Location = new System.Drawing.Point(300, 62);
+            this.lblTipo.Location = new System.Drawing.Point(304, 66);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(173, 23);
+            this.lblTipo.Size = new System.Drawing.Size(177, 16);
             this.lblTipo.TabIndex = 93;
             this.lblTipo.Text = "Error, Escoja una opción";
             this.lblTipo.Visible = false;
@@ -315,9 +315,9 @@
             this.lblcode.AutoSize = true;
             this.lblcode.BackColor = System.Drawing.Color.DarkRed;
             this.lblcode.ForeColor = System.Drawing.Color.White;
-            this.lblcode.Location = new System.Drawing.Point(298, 26);
+            this.lblcode.Location = new System.Drawing.Point(302, 29);
             this.lblcode.Name = "lblcode";
-            this.lblcode.Size = new System.Drawing.Size(237, 23);
+            this.lblcode.Size = new System.Drawing.Size(239, 16);
             this.lblcode.TabIndex = 92;
             this.lblcode.Text = "Error, Ingrese el código del evento";
             this.lblcode.Visible = false;
@@ -326,7 +326,7 @@
             // 
             this.txtCodeEvent.Location = new System.Drawing.Point(122, 26);
             this.txtCodeEvent.Name = "txtCodeEvent";
-            this.txtCodeEvent.Size = new System.Drawing.Size(176, 30);
+            this.txtCodeEvent.Size = new System.Drawing.Size(176, 23);
             this.txtCodeEvent.TabIndex = 91;
             this.txtCodeEvent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodeEvent_KeyPress);
             this.txtCodeEvent.MouseEnter += new System.EventHandler(this.txtCodeEvent_MouseEnter);
@@ -335,11 +335,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(9, 33);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 23);
+            this.label5.Size = new System.Drawing.Size(58, 16);
             this.label5.TabIndex = 90;
             this.label5.Text = "Código:";
             // 
@@ -380,7 +380,7 @@
             this.cmbCli.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.cmbCli.Location = new System.Drawing.Point(272, 310);
             this.cmbCli.Name = "cmbCli";
-            this.cmbCli.Size = new System.Drawing.Size(268, 31);
+            this.cmbCli.Size = new System.Drawing.Size(268, 24);
             this.cmbCli.TabIndex = 87;
             this.cmbCli.ValueMember = "IDCLIENTE";
             this.cmbCli.MouseEnter += new System.EventHandler(this.cmbCli_MouseEnter);
@@ -399,11 +399,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(12, 310);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 23);
+            this.label4.Size = new System.Drawing.Size(61, 16);
             this.label4.TabIndex = 86;
             this.label4.Text = "Cliente:";
             // 
@@ -416,7 +416,7 @@
             this.cmbEDT.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.cmbEDT.Location = new System.Drawing.Point(272, 262);
             this.cmbEDT.Name = "cmbEDT";
-            this.cmbEDT.Size = new System.Drawing.Size(265, 31);
+            this.cmbEDT.Size = new System.Drawing.Size(265, 24);
             this.cmbEDT.TabIndex = 85;
             this.cmbEDT.ValueMember = "IDGRUPO";
             this.cmbEDT.MouseEnter += new System.EventHandler(this.cmbEDT_MouseEnter);
@@ -430,11 +430,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(12, 262);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
+            this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 84;
             this.label1.Text = "Equipo de Trabajo:";
             // 
@@ -446,7 +446,7 @@
             this.dateTPHI.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dateTPHI.Name = "dateTPHI";
             this.dateTPHI.ShowUpDown = true;
-            this.dateTPHI.Size = new System.Drawing.Size(119, 30);
+            this.dateTPHI.Size = new System.Drawing.Size(119, 23);
             this.dateTPHI.TabIndex = 83;
             this.dateTPHI.Value = new System.DateTime(2019, 1, 1, 6, 0, 0, 0);
             this.dateTPHI.MouseEnter += new System.EventHandler(this.dateTPHI_MouseEnter);
@@ -456,7 +456,7 @@
             // 
             this.txtAddress.Location = new System.Drawing.Point(120, 138);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(419, 30);
+            this.txtAddress.Size = new System.Drawing.Size(419, 23);
             this.txtAddress.TabIndex = 79;
             this.txtAddress.MouseEnter += new System.EventHandler(this.textBox2_MouseEnter);
             this.txtAddress.MouseLeave += new System.EventHandler(this.txtAddress_MouseLeave);
@@ -474,7 +474,7 @@
             "Otros"});
             this.cmbTipo.Location = new System.Drawing.Point(121, 62);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(178, 31);
+            this.cmbTipo.Size = new System.Drawing.Size(178, 24);
             this.cmbTipo.TabIndex = 76;
             this.cmbTipo.MouseEnter += new System.EventHandler(this.comboBox5_MouseEnter);
             this.cmbTipo.MouseLeave += new System.EventHandler(this.comboBox5_MouseLeave);
@@ -482,11 +482,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(6, 65);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 23);
+            this.label10.Size = new System.Drawing.Size(43, 16);
             this.label10.TabIndex = 75;
             this.label10.Text = "Tipo:";
             // 
@@ -498,7 +498,7 @@
             this.dTPHDF2.MinDate = new System.DateTime(2018, 1, 1, 0, 0, 0, 0);
             this.dTPHDF2.Name = "dTPHDF2";
             this.dTPHDF2.ShowUpDown = true;
-            this.dTPHDF2.Size = new System.Drawing.Size(116, 30);
+            this.dTPHDF2.Size = new System.Drawing.Size(116, 23);
             this.dTPHDF2.TabIndex = 100;
             this.dTPHDF2.Value = new System.DateTime(2019, 1, 1, 7, 0, 0, 0);
             this.dTPHDF2.MouseEnter += new System.EventHandler(this.dTPHDF2_MouseEnter);
@@ -508,11 +508,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(279, 9);
+            this.label8.Location = new System.Drawing.Point(279, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(277, 47);
+            this.label8.Size = new System.Drawing.Size(288, 32);
             this.label8.TabIndex = 71;
             this.label8.Text = "Registro de Evento";
             // 

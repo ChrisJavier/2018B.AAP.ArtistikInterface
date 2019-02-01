@@ -48,14 +48,15 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century Schoolbook", 21.75F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(68, 9);
+            this.label11.Location = new System.Drawing.Point(48, 35);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(356, 51);
+            this.label11.Size = new System.Drawing.Size(360, 34);
             this.label11.TabIndex = 67;
             this.label11.Text = "Registro de Parámetro";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // groupBox1
             // 
@@ -75,40 +76,40 @@
             // txtApellidos
             // 
             this.txtApellidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellidos.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtApellidos.Location = new System.Drawing.Point(187, 101);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(160, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(160, 14);
             this.txtApellidos.TabIndex = 47;
             // 
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtNombre.Location = new System.Drawing.Point(187, 69);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(160, 20);
+            this.txtNombre.Size = new System.Drawing.Size(160, 14);
             this.txtNombre.TabIndex = 46;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(48, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 23);
+            this.label4.Size = new System.Drawing.Size(46, 16);
             this.label4.TabIndex = 42;
             this.label4.Text = "Valor";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(48, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 23);
+            this.label3.Size = new System.Drawing.Size(63, 16);
             this.label3.TabIndex = 41;
             this.label3.Text = "Nombre";
             // 

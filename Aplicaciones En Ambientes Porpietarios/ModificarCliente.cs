@@ -277,5 +277,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

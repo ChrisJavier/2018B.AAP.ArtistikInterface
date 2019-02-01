@@ -260,5 +260,15 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
