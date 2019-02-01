@@ -68,11 +68,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(28, 9);
+            this.label8.Location = new System.Drawing.Point(35, 25);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(382, 47);
+            this.label8.Size = new System.Drawing.Size(399, 32);
             this.label8.TabIndex = 77;
             this.label8.Text = "Modificación de Proveedor";
             // 
@@ -206,7 +206,7 @@
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(29, 60);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(631, 290);
@@ -230,11 +230,11 @@
             // 
             this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Century Schoolbook", 8.25F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(398, 207);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(176, 27);
+            this.comboBox1.Size = new System.Drawing.Size(176, 22);
             this.comboBox1.TabIndex = 89;
             this.comboBox1.Click += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -243,44 +243,44 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(24, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 23);
+            this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 88;
             this.label2.Text = "Tipo";
             // 
             // txtDireccion
             // 
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDireccion.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtDireccion.Location = new System.Drawing.Point(271, 123);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(303, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(303, 14);
             this.txtDireccion.TabIndex = 80;
             // 
             // txtTelefono
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefono.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtTelefono.Location = new System.Drawing.Point(271, 169);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(303, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(303, 14);
             this.txtTelefono.TabIndex = 81;
             // 
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtNombre.Location = new System.Drawing.Point(269, 88);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(303, 20);
+            this.txtNombre.Size = new System.Drawing.Size(303, 14);
             this.txtNombre.TabIndex = 78;
             // 
             // txtIdentificacion
             // 
             this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdentificacion.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtIdentificacion.Location = new System.Drawing.Point(269, 53);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(303, 20);
+            this.txtIdentificacion.Size = new System.Drawing.Size(303, 14);
             this.txtIdentificacion.TabIndex = 77;
             // 
             // label6
@@ -288,7 +288,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(24, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 23);
+            this.label6.Size = new System.Drawing.Size(70, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Teléfono ";
             // 
@@ -297,7 +297,7 @@
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(66, 48);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(56, 27);
+            this.radioButton2.Size = new System.Drawing.Size(58, 20);
             this.radioButton2.TabIndex = 12;
             this.radioButton2.Text = "RUC";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -308,7 +308,7 @@
             this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(22, 48);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 27);
+            this.radioButton1.Size = new System.Drawing.Size(45, 20);
             this.radioButton1.TabIndex = 8;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "CI ";
@@ -319,7 +319,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(24, 128);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Dirección";
             // 
@@ -328,7 +328,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(22, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 23);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre ";
             // 

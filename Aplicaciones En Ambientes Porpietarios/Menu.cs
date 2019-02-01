@@ -458,5 +458,10 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             FormEE.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             FormEE.Show();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

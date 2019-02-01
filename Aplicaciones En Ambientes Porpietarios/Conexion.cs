@@ -20,7 +20,7 @@ namespace Aplicaciones_En_Ambientes_Porpietarios
             try
             {
                 con.Open();
-                MessageBox.Show("CONECTADO");
+                MessageBox.Show("CONEXIÓN EXITOSA");
             }
             catch (Exception ex)
             {

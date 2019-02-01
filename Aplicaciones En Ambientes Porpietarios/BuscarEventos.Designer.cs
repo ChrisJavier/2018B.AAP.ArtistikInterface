@@ -309,7 +309,7 @@
             this.gBoxDatos.Controls.Add(this.label4);
             this.gBoxDatos.Controls.Add(this.label3);
             this.gBoxDatos.Controls.Add(this.label2);
-            this.gBoxDatos.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gBoxDatos.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBoxDatos.Location = new System.Drawing.Point(34, 45);
             this.gBoxDatos.Name = "gBoxDatos";
             this.gBoxDatos.Size = new System.Drawing.Size(581, 341);
@@ -342,7 +342,7 @@
             this.lblCliente1.AutoSize = true;
             this.lblCliente1.Location = new System.Drawing.Point(141, 298);
             this.lblCliente1.Name = "lblCliente1";
-            this.lblCliente1.Size = new System.Drawing.Size(0, 23);
+            this.lblCliente1.Size = new System.Drawing.Size(0, 16);
             this.lblCliente1.TabIndex = 15;
             // 
             // lblEA
@@ -350,7 +350,7 @@
             this.lblEA.AutoSize = true;
             this.lblEA.Location = new System.Drawing.Point(174, 245);
             this.lblEA.Name = "lblEA";
-            this.lblEA.Size = new System.Drawing.Size(0, 23);
+            this.lblEA.Size = new System.Drawing.Size(0, 16);
             this.lblEA.TabIndex = 14;
             // 
             // lblHDF
@@ -358,7 +358,7 @@
             this.lblHDF.AutoSize = true;
             this.lblHDF.Location = new System.Drawing.Point(472, 185);
             this.lblHDF.Name = "lblHDF";
-            this.lblHDF.Size = new System.Drawing.Size(0, 23);
+            this.lblHDF.Size = new System.Drawing.Size(0, 16);
             this.lblHDF.TabIndex = 13;
             // 
             // lblHDI
@@ -366,7 +366,7 @@
             this.lblHDI.AutoSize = true;
             this.lblHDI.Location = new System.Drawing.Point(174, 185);
             this.lblHDI.Name = "lblHDI";
-            this.lblHDI.Size = new System.Drawing.Size(0, 23);
+            this.lblHDI.Size = new System.Drawing.Size(0, 16);
             this.lblHDI.TabIndex = 12;
             // 
             // lblAddress1
@@ -374,7 +374,7 @@
             this.lblAddress1.AutoSize = true;
             this.lblAddress1.Location = new System.Drawing.Point(128, 142);
             this.lblAddress1.Name = "lblAddress1";
-            this.lblAddress1.Size = new System.Drawing.Size(0, 23);
+            this.lblAddress1.Size = new System.Drawing.Size(0, 16);
             this.lblAddress1.TabIndex = 11;
             // 
             // lblDate1
@@ -382,7 +382,7 @@
             this.lblDate1.AutoSize = true;
             this.lblDate1.Location = new System.Drawing.Point(129, 90);
             this.lblDate1.Name = "lblDate1";
-            this.lblDate1.Size = new System.Drawing.Size(0, 23);
+            this.lblDate1.Size = new System.Drawing.Size(0, 16);
             this.lblDate1.TabIndex = 10;
             // 
             // lblTipo1
@@ -390,7 +390,7 @@
             this.lblTipo1.AutoSize = true;
             this.lblTipo1.Location = new System.Drawing.Point(424, 45);
             this.lblTipo1.Name = "lblTipo1";
-            this.lblTipo1.Size = new System.Drawing.Size(0, 23);
+            this.lblTipo1.Size = new System.Drawing.Size(0, 16);
             this.lblTipo1.TabIndex = 9;
             // 
             // lblCode1
@@ -398,86 +398,86 @@
             this.lblCode1.AutoSize = true;
             this.lblCode1.Location = new System.Drawing.Point(129, 45);
             this.lblCode1.Name = "lblCode1";
-            this.lblCode1.Size = new System.Drawing.Size(0, 23);
+            this.lblCode1.Size = new System.Drawing.Size(0, 16);
             this.lblCode1.TabIndex = 8;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(28, 295);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 26);
+            this.label9.Size = new System.Drawing.Size(69, 19);
             this.label9.TabIndex = 7;
             this.label9.Text = "Cliente:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(28, 243);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 26);
+            this.label8.Size = new System.Drawing.Size(143, 19);
             this.label8.TabIndex = 6;
             this.label8.Text = "Equipo Asignado:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(300, 185);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(170, 26);
+            this.label7.Size = new System.Drawing.Size(173, 19);
             this.label7.TabIndex = 5;
             this.label7.Text = "Hora de Finalización:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(28, 185);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(122, 26);
+            this.label6.Size = new System.Drawing.Size(123, 19);
             this.label6.TabIndex = 4;
             this.label6.Text = "Hora de Inicio:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(23, 142);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 26);
+            this.label5.Size = new System.Drawing.Size(88, 19);
             this.label5.TabIndex = 3;
             this.label5.Text = "Dirección:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(28, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 26);
+            this.label4.Size = new System.Drawing.Size(60, 19);
             this.label4.TabIndex = 2;
             this.label4.Text = "Fecha:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(361, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 26);
+            this.label3.Size = new System.Drawing.Size(48, 19);
             this.label3.TabIndex = 1;
             this.label3.Text = "Tipo:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Schoolbook", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(27, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 26);
+            this.label2.Size = new System.Drawing.Size(67, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Código:";
             // 

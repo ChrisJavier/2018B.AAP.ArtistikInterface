@@ -67,13 +67,14 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century Schoolbook", 20.25F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(26, 9);
+            this.label8.Location = new System.Drawing.Point(35, 24);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(338, 47);
+            this.label8.Size = new System.Drawing.Size(354, 32);
             this.label8.TabIndex = 75;
             this.label8.Text = "Modificación de Cliente";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // pictureBox2
             // 
@@ -113,7 +114,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(35, 59);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(596, 285);
@@ -126,7 +127,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(2, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 23);
+            this.label2.Size = new System.Drawing.Size(142, 16);
             this.label2.TabIndex = 91;
             this.label2.Text = "Cédula de Identidad";
             // 
@@ -145,48 +146,48 @@
             // txtDireccion
             // 
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDireccion.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtDireccion.Location = new System.Drawing.Point(230, 168);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(303, 20);
+            this.txtDireccion.Size = new System.Drawing.Size(303, 14);
             this.txtDireccion.TabIndex = 80;
             this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // txtTelefono
             // 
             this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefono.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefono.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtTelefono.Location = new System.Drawing.Point(229, 218);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(303, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(303, 14);
             this.txtTelefono.TabIndex = 81;
             this.txtTelefono.TextChanged += new System.EventHandler(this.txtTelefono_TextChanged);
             // 
             // txtApellidos
             // 
             this.txtApellidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtApellidos.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtApellidos.Location = new System.Drawing.Point(229, 130);
             this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(303, 20);
+            this.txtApellidos.Size = new System.Drawing.Size(303, 14);
             this.txtApellidos.TabIndex = 79;
             // 
             // txtNombre
             // 
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNombre.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtNombre.Location = new System.Drawing.Point(231, 94);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(303, 20);
+            this.txtNombre.Size = new System.Drawing.Size(303, 14);
             this.txtNombre.TabIndex = 78;
             // 
             // txtIdentificacion
             // 
             this.txtIdentificacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIdentificacion.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdentificacion.Font = new System.Drawing.Font("Century Schoolbook", 8.25F);
             this.txtIdentificacion.Location = new System.Drawing.Point(230, 60);
             this.txtIdentificacion.Name = "txtIdentificacion";
-            this.txtIdentificacion.Size = new System.Drawing.Size(303, 20);
+            this.txtIdentificacion.Size = new System.Drawing.Size(303, 14);
             this.txtIdentificacion.TabIndex = 77;
             // 
             // label6
@@ -194,7 +195,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(5, 218);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 23);
+            this.label6.Size = new System.Drawing.Size(70, 16);
             this.label6.TabIndex = 15;
             this.label6.Text = "Teléfono ";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -204,7 +205,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 23);
+            this.label4.Size = new System.Drawing.Size(74, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Dirección";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -214,7 +215,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(5, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 23);
+            this.label3.Size = new System.Drawing.Size(72, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Apellidos";
             // 
@@ -223,7 +224,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 23);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres";
             // 

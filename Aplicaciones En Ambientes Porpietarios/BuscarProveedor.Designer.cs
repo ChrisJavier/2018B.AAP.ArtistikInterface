@@ -71,7 +71,7 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.pictureBox5);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Bold);
             this.groupBox1.Location = new System.Drawing.Point(35, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(581, 114);
@@ -84,7 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 23);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 75;
             this.label1.Text = "Buscar por:";
             // 
@@ -96,14 +96,14 @@
             "RUC"});
             this.comboBox1.Location = new System.Drawing.Point(6, 66);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(135, 31);
+            this.comboBox1.Size = new System.Drawing.Size(135, 24);
             this.comboBox1.TabIndex = 74;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(165, 67);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(355, 30);
+            this.textBox1.Size = new System.Drawing.Size(355, 23);
             this.textBox1.TabIndex = 0;
             // 
             // pictureBox5

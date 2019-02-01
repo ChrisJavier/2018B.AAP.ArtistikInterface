@@ -148,6 +148,12 @@
     <Compile Include="ConsultarParametro.Designer.cs">
       <DependentUpon>ConsultarParametro.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearEmpleado - Copia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearEmpleado - Copia.Designer.cs">
+      <DependentUpon>CrearEmpleado - Copia.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearParametro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -423,6 +429,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConsultarParametro.resx">
       <DependentUpon>ConsultarParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearEmpleado - Copia.resx">
+      <DependentUpon>CrearEmpleado - Copia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearParametro.resx">
       <DependentUpon>CrearParametro.cs</DependentUpon>
